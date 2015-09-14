@@ -162,7 +162,7 @@ class Smartsupp_Admin {
 
 		$fields['variables-settings'] = array(
 			'active-vars' => array(
-				'title' => __('Enable variables', $this->plugin_slug),
+				'title' => __( 'Visitor identification', $this->plugin_slug ),
 				'field_options' => array(
 					'type' => 'checkbox',
 					'list' => array(
