@@ -78,6 +78,20 @@ class Smartsupp_Admin {
 		return self::$instance;
 	}
 
+	public static function install()
+	{
+		$smartsupp = array();
+		$smartsupp['active'] = true;
+		$smartsupp['chat-id'] = null;
+		$smartsupp['active-vars'] = true;
+		$smartsupp['wp-vars']['name'] = true;
+		$smartsupp['wp-vars']['username'] = true;
+		$smartsupp['wp-vars']['role'] = true;
+		$smartsupp['wp-vars']['email'] = true;
+
+		update_option('smartsupp', $smartsupp);
+	}
+
 
 	/**
 	 * Register the administration menu for this plugin into the WordPress Dashboard menu.
@@ -123,7 +137,7 @@ class Smartsupp_Admin {
 
 		$fields['general-settings'] = array(
 			'active' => array(
-				'title' => __('Show chat box', $this->plugin_slug),
+				'title' => __('Show on website', $this->plugin_slug),
 				'field_options' => array(
 					'type' => 'checkbox',
 					'list' => array(
@@ -136,7 +150,7 @@ class Smartsupp_Admin {
 				)
 			),
 			'chat-id' => array(
-				'title' => __('Smartsupp Chat ID', $this->plugin_slug),
+				'title' => __('Smartsupp key', $this->plugin_slug),
 				'field_options' => array(
 					'type' => 'text',
 					'name' => 'smartsupp[chat-id]',
@@ -155,8 +169,7 @@ class Smartsupp_Admin {
 						array(
 							'name' => 'smartsupp[active-vars]',
 							'value' => $smartsupp['active-vars'],
-							'title' => '',
-							'description' => __("Display detailed visitor info in Smartsupp dashboard, so you always see it while chatting. To show the info, visitor has to be signed in on your website.", $this->plugin_slug)
+							'title' => __("Display detailed visitor info in Smartsupp dashboard, so you always see it while chatting. To show the info, visitor has to be signed in on your website.", $this->plugin_slug)
 						)
 					)
 				)
@@ -169,26 +182,22 @@ class Smartsupp_Admin {
 						array(
 							'name' => 'smartsupp[wp-vars][name]',
 							'value' => $smartsupp['wp-vars']['name'],
-							'title' => __('Name', $this->plugin_slug),
-							'description' => __("Shows user's display name.", $this->plugin_slug)
+							'title' => __('Visitor\'s name', $this->plugin_slug)
 						),
 						array(
 							'name' => 'smartsupp[wp-vars][username]',
 							'value' => $smartsupp['wp-vars']['username'],
-							'title' => __('Username', $this->plugin_slug),
-							'description' => __("Shows user's username.", $this->plugin_slug)
+							'title' => __('Visitor\'s username', $this->plugin_slug)
 						),
 						array(
 							'name' => 'smartsupp[wp-vars][role]',
 							'value' => $smartsupp['wp-vars']['role'],
-							'title' => __('Role', $this->plugin_slug),
-							'description' => __("Shows user's role.", $this->plugin_slug)
+							'title' => __('Visitor\'s role', $this->plugin_slug)
 						),
 						array(
 							'name' => 'smartsupp[wp-vars][email]',
 							'value' => $smartsupp['wp-vars']['email'],
-							'title' => __('E-mail', $this->plugin_slug),
-							'description' => __("Shows user's email.", $this->plugin_slug)
+							'title' => __('Visitor\'s e-mail', $this->plugin_slug)
 						),
 					)
 				)
@@ -205,20 +214,17 @@ class Smartsupp_Admin {
 	    				array(
 	    					'name' => 'smartsupp[woocommerce-vars][spent]',
 	    					'value' => $smartsupp['woocommerce-vars']['spent'],
-	    					'title' => __('Spent', $this->plugin_slug),
-	    					'description' => __("Shows how much money customer has spent.", $this->plugin_slug)
+	    					'title' => __('Visitor\'s spent', $this->plugin_slug)
 	    				),
 	    				array(
 	    					'name' => 'smartsupp[woocommerce-vars][orders]',
 	    					'value' => $smartsupp['woocommerce-vars']['orders'],
-	    					'title' => __('Orders', $this->plugin_slug),
-	    					'description' => __("Shows customer's orders amount.", $this->plugin_slug)
+	    					'title' => __('Visitor\'s orders amount', $this->plugin_slug)
 	    				),
 	    				array(
 	    					'name' => 'smartsupp[woocommerce-vars][location]',
 	    					'value' => $smartsupp['woocommerce-vars']['location'],
-	    					'title' => __('Location', $this->plugin_slug),
-	    					'description' => __("Shows customer's billing locaition.", $this->plugin_slug)
+	    					'title' => __('Visitor\'s location', $this->plugin_slug)
 	    				),
 	    			)
 	    		)
@@ -230,7 +236,7 @@ class Smartsupp_Admin {
 		
 		register_setting( 'smartsupp_settings', 'smartsupp' );
 		add_settings_section( 'general-settings', '', NULL, $this->plugin_slug );
-		add_settings_section( 'variables-settings', __( 'Visitor identification', $this->plugin_slug ), NULL, $this->plugin_slug );
+		add_settings_section( 'variables-settings', __( 'Visitor identification', $this->plugin_slug ), array($this, 'variabler_setting_section_callback_function'), $this->plugin_slug );
 
 
 		foreach ($fields as $section => $field) {
@@ -239,6 +245,10 @@ class Smartsupp_Admin {
 			}
 		}
 
+	}
+
+	function variabler_setting_section_callback_function() {
+		echo '<img src="' . plugins_url( 'images/screen.png', dirname(__FILE__) ) . '" > ';
 	}
 
 	/**
