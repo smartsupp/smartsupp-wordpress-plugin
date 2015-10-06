@@ -36,8 +36,6 @@ class Smartsupp_Admin {
 	 * @since     0.1.0
 	 */
 	private function __construct() {
-
-
 		/*
 		 * Call $plugin_slug from public plugin class.
 		 */
@@ -84,6 +82,7 @@ class Smartsupp_Admin {
 		$smartsupp['active'] = true;
 		$smartsupp['chat-id'] = null;
 		$smartsupp['active-vars'] = true;
+		$smartsupp['optional-code'] = true;
 		$smartsupp['wp-vars']['name'] = true;
 		$smartsupp['wp-vars']['username'] = true;
 		$smartsupp['wp-vars']['role'] = true;
@@ -110,6 +109,15 @@ class Smartsupp_Admin {
 			'manage_options',
 			$this->plugin_slug,
 			array( $this, 'display_plugin_admin_page' )
+		);
+
+		add_menu_page(
+			__( 'Smartsupp Live Chat - Settings', $this->plugin_slug ),
+			__( 'Smartsupp Chat', $this->plugin_slug ),
+			'manage_options',
+			$this->plugin_slug,
+			array( $this, 'display_plugin_admin_page' ),
+			plugins_url( 'images/icon-20x20.png', dirname(__FILE__))
 		);
 
 	}
@@ -161,6 +169,14 @@ class Smartsupp_Admin {
 		);
 
 		$fields['variables-settings'] = array(
+			'optional-code' => array(
+				'title' => __('Enter optional API code', $this->plugin_slug ),
+				'field_options' => array(
+					'type' => 'textarea',
+					'name' => 'smartsupp[optional-code]',
+					'value' => $smartsupp['optional-code'],
+				)
+			),
 			'active-vars' => array(
 				'title' => __( 'Visitor identification', $this->plugin_slug ),
 				'field_options' => array(
@@ -235,8 +251,8 @@ class Smartsupp_Admin {
 
 		
 		register_setting( 'smartsupp_settings', 'smartsupp' );
-		add_settings_section( 'general-settings', '', NULL, $this->plugin_slug );
-		add_settings_section( 'variables-settings', __( 'Visitor identification', $this->plugin_slug ), array($this, 'variabler_setting_section_callback_function'), $this->plugin_slug );
+		add_settings_section( 'general-settings', '', array($this, 'general_setting_section_callback_function'), $this->plugin_slug );
+		add_settings_section( 'variables-settings', __( 'Visitor identification', $this->plugin_slug ), array($this, 'variables_setting_section_callback_function'), $this->plugin_slug );
 
 
 		foreach ($fields as $section => $field) {
@@ -247,8 +263,28 @@ class Smartsupp_Admin {
 
 	}
 
-	function variabler_setting_section_callback_function() {
-		echo '<img src="' . plugins_url( 'images/screen.png', dirname(__FILE__) ) . '" > ';
+	function general_setting_section_callback_function() {
+		echo __("Don't have a Smartsupp account? Sign up for free <a href=\"http://www.smartsupp.com\" target=\"_blank\">sign up for free</a>", $this->plugin_slug);
+	}
+
+	function variables_setting_section_callback_function() {
+		echo "<script>
+		jQuery(document).ready(function() {
+			var code_tr = jQuery('textarea[name=\"smartsupp[optional-code]\"]').closest('tr');
+
+			if(!jQuery('textarea[name=\"smartsupp[optional-code]\"]').val()) {
+				code_tr.hide();
+			}
+
+			jQuery('a#optional-code').click(function() {
+				code_tr.show(400);
+				return false;
+			});
+		});
+		</script>";
+		echo __("<a id=\"optional-code\">Optional API code</a> (API documentation at <a href=\"http://developers.smartsupp.com\" target=\"_blank\">developers.smartsupp.com</a>)", $this->plugin_slug);
+		echo "<br /><br /><button onclick=\"window.open('https://dashboard.smartsupp.com','_blank');\" type=\"button\">" . __('Go to Smartsupp dashboard', $this->plugin_slug) . "</button> ";
+		echo '<br /><br /><br /><img src="' . plugins_url( 'images/screen.png', dirname(__FILE__) ) . '" > ';
 	}
 
 	/**
@@ -261,6 +297,9 @@ class Smartsupp_Admin {
 		switch ( $args['type'] ) {
 			case 'text':
 				echo '<input type="text" name="' . $args['name'] . '" value="' . esc_attr( $args['value'] ) . '" size="' . $args['size'] . '" />';
+				break;
+			case 'textarea':
+				echo '<textarea id="' . $args['name'] . '" name="' . $args['name'] . '" cols="60" rows="10">' . esc_attr( $args['value'] ) . '</textarea>';
 				break;
 			case 'checkbox':
 				foreach ($args['list'] as $list) {
