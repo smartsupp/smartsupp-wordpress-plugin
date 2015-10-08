@@ -4,7 +4,7 @@ Donate link:
 Tags: livechat, live chat, smartsupp, woocommerce
 Requires at least: 3.6.0
 Tested up to: 3.9.2
-Stable tag: 0.1
+Stable tag: 2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -49,6 +49,9 @@ Supported variables:
 1. Plugin settings
 
 == Changelog ==
+
+= 0.2.2 =
+* Some language changes
 
 = 0.2.1 =
 * fixed error in rendering
