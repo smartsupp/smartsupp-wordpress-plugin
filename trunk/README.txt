@@ -64,6 +64,9 @@ https://www.smartsupp.com/help/wordpress
 
 == Changelog ==
 
+= 2.8 =
+* Fixed some PHP warnings
+
 = 2.7 =
 * Updated dependencies
 * Fixed problem with some non-ASCII letters used in strings

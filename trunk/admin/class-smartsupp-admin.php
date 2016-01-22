@@ -215,22 +215,22 @@ class Smartsupp_Admin {
 					'list' => array(
 						array(
 							'name' => 'smartsupp[wp-vars][name]',
-							'value' => $smartsupp['wp-vars']['name'],
+							'value' => !empty($smartsupp['wp-vars']['name']) ? $smartsupp['wp-vars']['name'] : '',
 							'title' => __('Visitor\'s name', $this->plugin_slug)
 						),
 						array(
 							'name' => 'smartsupp[wp-vars][username]',
-							'value' => $smartsupp['wp-vars']['username'],
+							'value' => !empty($smartsupp['wp-vars']['username']) ? $smartsupp['wp-vars']['username'] : '',
 							'title' => __('Visitor\'s username', $this->plugin_slug)
 						),
 						array(
 							'name' => 'smartsupp[wp-vars][role]',
-							'value' => $smartsupp['wp-vars']['role'],
+							'value' => !empty($smartsupp['wp-vars']['role']) ? $smartsupp['wp-vars']['role'] : '',
 							'title' => __('Visitor\'s role', $this->plugin_slug)
 						),
 						array(
 							'name' => 'smartsupp[wp-vars][email]',
-							'value' => $smartsupp['wp-vars']['email'],
+							'value' => !empty($smartsupp['wp-vars']['email']) ? $smartsupp['wp-vars']['email'] : '',
 							'title' => __('Visitor\'s e-mail', $this->plugin_slug)
 						),
 					)
