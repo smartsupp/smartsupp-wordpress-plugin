@@ -65,6 +65,7 @@ https://www.smartsupp.com/help/wordpress
 
 = 3.1 =
 * Fixed bug on some installations with WooCommerce
+* Fixed bug with custom templates not showing styles
 
 = 3.0 =
 * Refactored plugin design

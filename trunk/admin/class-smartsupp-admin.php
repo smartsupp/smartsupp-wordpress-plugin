@@ -113,13 +113,18 @@ class Smartsupp_Admin
 					'email' => $_POST['email'],
 					'password' => $_POST['password'],
 				);
-				$response = $formAction === 'login' ? $api->login($data) : $api->create($data + array('partnerKey' => 'k717wrqdi5', 'lang' => $this->convertLocale(get_locale())));
+				try {
+					$response = $formAction === 'login' ? $api->login($data) : $api->create($data + array('partnerKey' => 'k717wrqdi5', 'lang' => $this->convertLocale(get_locale())));
 
-				if (isset($response['error'])) {
-					$message = $response['message'];
+					if (isset($response['error'])) {
+						$message = $response['message'];
+						$email = $_POST['email'];
+					} else {
+						$this->activate($response['account']['key'], $_POST['email']);
+					}
+				} catch (Exception $e) {
+					$message = $e->getMessage();
 					$email = $_POST['email'];
-				} else {
-					$this->activate($response['account']['key'], $_POST['email']);
 				}
 				break;
 			case 'update':
@@ -142,14 +147,6 @@ class Smartsupp_Admin
 
 	public function renderAdminPage($message = NULL, $formAction = NULL, $email = NULL)
 	{
-		$pluginUrl = $this->getPluginUrl();
-		add_action('admin_head', function () use ($pluginUrl) {
-			echo '<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">' .
-				'<link rel="stylesheet" type="text/css" href="' . $pluginUrl . '/assets/bootstrap.min.css" />' .
-				'<link rel="stylesheet" type="text/css" href="' . $pluginUrl . '/assets/style.css" />' .
-				'<script src="' . $pluginUrl . '/assets/script.js" />';
-		});
-
 		$this->render('views/admin.php', array(
 			'domain' => $this->plugin_slug,
 			'customers' => $this->getCustomers(),

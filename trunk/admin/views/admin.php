@@ -2,6 +2,10 @@
 
 $pluginUrl = plugins_url('', dirname(__DIR__));
 
+echo '<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&amp;subset=latin,latin-ext" rel="stylesheet" property="stylesheet" type="text/css">' .
+	'<link rel="stylesheet" property="stylesheet" type="text/css" href="' . $pluginUrl . '/assets/bootstrap.min.css" />' .
+	'<link rel="stylesheet" property="stylesheet" type="text/css" href="' . $pluginUrl . '/assets/style.css" />';
+
 ?><div class="wrap" id="content">
 
 	<?php if ($options['active']) { ?>
@@ -178,3 +182,5 @@ $pluginUrl = plugins_url('', dirname(__DIR__));
 	<?php } ?>
 
 </div>
+
+<?php echo '<script src="' . $pluginUrl . '/assets/script.js" />'; ?>
