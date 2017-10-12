@@ -3,7 +3,7 @@ Contributors: Smartsupp
 Donate link:
 Tags: banckle, Casengo, chat, chat for web, chat online, chat software, click desk, clickdesk, freshdesk, free chat, free live chat, IM Chat, jivochat, jivosite, live chat, live chat inc, live support, live web chat, livechat, olark, online chat, online support, snapengage, wordpress chat, wordpress live chat, Zendesk, Zopim, Tawk.to, Happyfox chat, Smartsupp, Smartsup, Smartsapp, Boldchat, Live person, pure chat, chatra
 Requires at least: 3.1
-Tested up to: 4.8.2
+Tested up to: 4.8
 Stable tag: 3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
