@@ -4,7 +4,7 @@
  *
  * @package   Smartsupp
  * @author    Smartsupp <vladimir@smartsupp.com>
- * Version:   3.1
+ * Version:   3.2
  * @copyright 2014 smartsupp.com
  * @license   GPL-2.0+
  * @link      http://www.smartsupp.com
@@ -24,7 +24,7 @@ class Smartsupp
 	 * @since   0.1.0
 	 * @var     string
 	 */
-	const VERSION = '3.1';
+	const VERSION = '3.2';
 
 	/**
 	 * Plugin slug

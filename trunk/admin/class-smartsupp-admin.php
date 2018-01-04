@@ -130,7 +130,7 @@ class Smartsupp_Admin
 			case 'update':
 				$message = 'Custom code was updated.';
 				$this->updateOptions(array(
-					'optional-code' => $_POST['code'],
+					'optional-code' => strip_tags($_POST['code']),
 				));
 				break;
 			case 'disable':
