@@ -26,7 +26,7 @@ echo '<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&
 						<section class="intro">
                             <h4>
                                 <strong class="green"><?= __('Smartsupp’s chat box is now visible on your website.', $domain) ?></strong> <br /><br />
-                                <?= __('Go to Smartsupp dashboard to chat with visitors, customize chat box design and access all features.', $domain) ?>
+                                <?= __('Go to Smartsupp to chat with visitors, customize chat box design and access all features.', $domain) ?>
                             </h4>
 							<div class="intro--btn">
 								<a href="https://dashboard.smartsupp.com?utm_source=Wordpress&utm_medium=integration&utm_campaign=link" target="_blank" class="js-register btn btn-primary btn-xl"><?= __('Go to Smartsupp', $domain) ?></a>
