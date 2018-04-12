@@ -12,31 +12,51 @@ Smartsupp is free live chat with visitor recording. Your customers are on your w
 
 == Description ==
 
-= Smartsupp is free live chat with visitor recording. =
+**Try a free live chat with visitor recording**
 
-Smartsupp plugin supports visitor identification - you can display visitor info (like name, email, customer's VIP status) in Smartsupp, where you see it while chatting. This way you know are chatting with e.g. Tom Smith, who already spent 800 EUR on your website. Visitor has to be signed in on your website for you to be able to see the info.
+Smartsupp is a combination of live chat and visitor recording, making it the only tool you’ll need to get to understand your visitors. With Smartsupp you can chat with visitors in real-time and also watch their behavior on your website.
 
-= Smartsupp product video (shorther than 1 minute): =
+**Know everything about your visitors**
+
+The Smartsupp plugin lets you identify details of your visitors, like their name, email, or other categories you deem important. You can see all these details while chatting with that visitor so that you know who you’re chatting with (e.g., Tom Smith, who already spent $800 on your website). The visitor has to be signed in on your website for you to be able to see the info.
+
+**Chat with your visitors in real time**
+
+Smartsupp allows you to help your visitors as soon as they need assistance. You’re able to answer their questions instantly in the on-site chat box. If you notice similar situations arising, create and use canned replies and automatic messages to save time. With this fully customizable, multi-language live chat, you can increase your sales up to five times.
+
+**Record the screens of your visitors**
+
+Watch video recordings of any visitor on your website in the Smartsupp dashboard. You’ll see their screen, mouse movements, and clicks — great for understanding the behavior of your customers.
+
+The powerful combination of live chat and visitor recordings lets you know customers’ needs even before they make a final decision. Smartsupp helps you keep them on the right track.
 
 [youtube http://www.youtube.com/watch?v=g88XoQW9V7U]
 
-With Smartsupp you can chat with visitors in real-time and also watch their behavior on your website - you see screen, mouse movement and clicks of every visitor.
+**Features**
 
-= Smartsupp is available in following languages: =
+* A fully customizable chat box
+* Visitor recordings
+* Canned replies
+* Automatic messages and offline hours
+* Unlimited chat history
+* Multi-language support
+* Native mobile apps, both for Android and iOS
+
+**Smartsupp is available in following languages**
 
 * English
+* Čeština
+* Deutsch
 * Español
 * Français
-* Deutsch
-* Nederlands
-* Polski
-* Česky
 * Italiano
 * Magyar
-* Dansk
-* Русский
+* Nederlands
+* Polski
+* Português (BR)
+* Slovensky
 
-More info at https://www.smartsupp.com.
+**Website:** [https://www.smartsupp.com](https://www.smartsupp.com)
 
 == Installation ==
 
