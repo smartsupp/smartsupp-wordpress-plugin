@@ -76,10 +76,9 @@ https://www.smartsupp.com/help/wordpress
 == Screenshots ==
 
 1. Plugin settings
-
-2. Chat window - visible to customers
-
-3. Chat administration - visible to chat operators
+2. Chat administration - visible to chat operators
+3. Smartsupp Dashboard - statistics
+4. Chat window - visible to customers
 
 == Changelog ==
 
