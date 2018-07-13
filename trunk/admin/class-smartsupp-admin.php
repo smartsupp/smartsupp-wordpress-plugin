@@ -102,7 +102,7 @@ class Smartsupp_Admin
 			return;
 		}
 
-		$formAction = $message = $email = NULL;
+		$formAction = $message = $email = $termsConsent = NULL;
 		$action = (string) $_GET['ssaction'];
 		switch ($action) {
 			case 'login':
@@ -112,6 +112,7 @@ class Smartsupp_Admin
 				$data = array(
 					'email' => $_POST['email'],
 					'password' => $_POST['password'],
+                    'consentTerms' => 1,
 				);
 				try {
 					$response = $formAction === 'login' ? $api->login($data) : $api->create($data + array('partnerKey' => 'k717wrqdi5', 'lang' => $this->convertLocale(get_locale())));
@@ -119,12 +120,14 @@ class Smartsupp_Admin
 					if (isset($response['error'])) {
 						$message = $response['message'];
 						$email = $_POST['email'];
+                        $termsConsent = $_POST['termsConsent'];
 					} else {
 						$this->activate($response['account']['key'], $_POST['email']);
 					}
 				} catch (Exception $e) {
 					$message = $e->getMessage();
 					$email = $_POST['email'];
+                    $termsConsent = $_POST['termsConsent'];
 				}
 				break;
 			case 'update':
@@ -140,20 +143,21 @@ class Smartsupp_Admin
 				$message = 'Invalid action';
 				break;
 		}
-		$this->renderAdminPage($message, $formAction, $email);
+		$this->renderAdminPage($message, $formAction, $email, $termsConsent);
 		exit;
 	}
 
 
-	public function renderAdminPage($message = NULL, $formAction = NULL, $email = NULL)
+	public function renderAdminPage($message = NULL, $formAction = NULL, $email = NULL, $termsConsent = NULL)
 	{
-		$this->render('views/admin.php', array(
+        $this->render('views/admin.php', array(
 			'domain' => $this->plugin_slug,
 			'customers' => $this->getCustomers(),
 			'options' => $this->getOptions(),
 			'message' => (string) $message,
 			'formAction' => $formAction,
 			'email' => $email,
+            'termsConsent' => $termsConsent,
 		));
 	}
 

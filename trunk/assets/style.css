@@ -286,6 +286,10 @@ section {
 	font-size: 12px;
 }
 
+form#signUpForm div.checkbox.gdpr{
+	text-align: left;
+}
+
 .bold {
 	font-weight: bold;
 }

@@ -9,6 +9,7 @@
 			$('#home').hide();
 			$('#connect').show();
 			$('.js-clear').hide();
+            showGdpr(type == 'register');
 		}
 
 		function closeForm() {
@@ -29,6 +30,19 @@
 				$(this).text($(this).data(type));
 			})
 		}
+
+		function showGdpr(show) {
+			var $gdprContainer = $('.gdpr.checkbox');
+            var $checkbox = $gdprContainer.find('input');
+
+			if (show) {
+                $gdprContainer.show();
+                $checkbox.prop('disabled', false);
+			} else {
+                $gdprContainer.hide();
+                $checkbox.prop('disabled', true);
+			}
+        }
 
 		var $content = $('#content'), $document = $(document);
 
@@ -57,6 +71,7 @@
 			}, function () {
 				$loader.hide();
 				$button.show();
+                showGdpr(false);
 			});
 		}).on('submit', '.js-register-form', function (event) {
 			event.preventDefault();
@@ -65,10 +80,12 @@
 			$loader.show();
 			$content.load('?page=smartsupp&ssaction=register #content', {
 				email: $registerForm.find('input[name="email"]').val(),
-				password: $registerForm.find('input[name="password"]').val()
+				password: $registerForm.find('input[name="password"]').val(),
+                termsConsent: $registerForm.find('input[name="termsConsent"]').val()
 			}, function () {
 				$loader.hide();
 				$button.show();
+                showGdpr(true);
 			});
 		}).on('submit', '.js-code-form', function (event) {
 			event.preventDefault();

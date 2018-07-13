@@ -165,6 +165,11 @@ echo '<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&
 												</div>
 											</div>
 										</div>
+                                        <div class="gdpr checkbox">
+                                            <label for="frm-signUp-form-termsConsent">
+                                                <input <?= !empty($termsConsent) ? 'checked="checked"' : '' ?> value="1" type="checkbox" name="termsConsent" id="frm-signUp-form-termsConsent" required="">&nbsp;<?= __('I have read and agree with <a href="https://www.smartsupp.com/terms" target="_blank">Terms</a> and <a href="https://www.smartsupp.com/dpa" target="_blank">DPA</a>', $domain); ?>
+                                            </label>
+                                        </div>
 										<div class="form-group">
 											<div class="col-xs-12 form-button">
 												<div class="loader"></div>
