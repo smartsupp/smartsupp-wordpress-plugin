@@ -86,7 +86,7 @@ echo '<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&
 							<a href="javascript: void(0);" class="js-register btn btn-primary btn-xl"><?= __('Create a free account', $domain) ?></a>
 						</div>
 						<div class="intro--image">
-							<img src="<?= $pluginUrl ?>/images/intro-img.png" alt="intro" />
+							<img src="https://www.smartsupp.com/assets/images/dash/en.png" alt="intro" />
 						</div>
 					</div>
 				</section>
