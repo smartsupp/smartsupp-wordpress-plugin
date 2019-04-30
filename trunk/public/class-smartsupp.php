@@ -30,16 +30,21 @@ class Smartsupp
 	 * Plugin slug
 	 *
 	 * @since    0.1.0
-	 *
 	 * @var      string
 	 */
 	protected $plugin_slug = 'smartsupp';
+
+    /**
+     * Plugin text domain
+     *
+     * @var      string
+     */
+	protected $plugin_text_domain = 'smartsupp-live-chat';
 
 	/**
 	 * Instance of this class.
 	 *
 	 * @since    0.1.0
-	 *
 	 * @var      object
 	 */
 	protected static $instance = NULL;
@@ -98,7 +103,7 @@ class Smartsupp
 	 */
 	public function load_plugin_textdomain()
 	{
-		$domain = $this->plugin_slug;
+		$domain = $this->plugin_text_domain;
 		$locale = apply_filters('plugin_locale', get_locale(), $domain);
 
 		load_textdomain($domain, trailingslashit(WP_LANG_DIR) . $domain . '/' . $domain . '-' . $locale . '.mo');
