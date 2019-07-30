@@ -74,9 +74,9 @@ https://www.smartsupp.com/help/wordpress
 == Screenshots ==
 
 1. Smartsupp Dashboard
-2. Mobile application
-2. Chat administration - visible to chat operators
-4. Chat window - visible to customers
+2. Chat window - visible to customers
+3. Chat administration - visible to chat operators
+4. Mobile application
 
 == Changelog ==
 
