@@ -30,8 +30,6 @@ Watch video recordings of any visitor on your website in the Smartsupp dashboard
 
 The powerful combination of live chat and visitor recordings lets you know customers’ needs even before they make a final decision. Smartsupp helps you keep them on the right track.
 
-[youtube http://www.youtube.com/watch?v=g88XoQW9V7U]
-
 **Features**
 
 * A fully customizable chat box
@@ -75,9 +73,9 @@ https://www.smartsupp.com/help/wordpress
 
 == Screenshots ==
 
-1. Plugin settings
+1. Smartsupp Dashboard
+2. Mobile application
 2. Chat administration - visible to chat operators
-3. Smartsupp Dashboard - statistics
 4. Chat window - visible to customers
 
 == Changelog ==
