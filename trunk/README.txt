@@ -1,44 +1,43 @@
 === Smartsupp Live Chat ===
 Contributors: smartsupp, marekgach
 Donate link:
-Tags: banckle, Casengo, chat, chat for web, chat online, chat software, click desk, clickdesk, freshdesk, free chat, free live chat, IM Chat, jivochat, jivosite, live chat, live chat inc, live support, live web chat, livechat, olark, online chat, online support, snapengage, wordpress chat, wordpress live chat, Zendesk, Zopim, Tawk.to, Happyfox chat, Smartsupp, Smartsup, Smartsapp, Boldchat, Live person, pure chat, chatra
-Requires at least: 3.1
+Tags: Smartsupp, chat, live chat, online chat, messaging, B2B SaaS, support chat, web chat, free live chat, chat for web, chat online, chat software, free chat, jivochat, jivosite, live chat, live chat inc, live support, live web chat, livechat, olark, online chat, online support, snapengage, wordpress chat, wordpress live chat, Zopim, Tawk.to, Tidio, Tidio chat, Crisp, Crisp chat, Drift, Smartsupp, Smartsup, Smartsapp, Boldchat, Live person, pure chat, chatra, userlike, liveagent, helpcrunch
+Requires at least: 3.0
 Tested up to: 5.2
+Requires PHP: 5.3
 Stable tag: 3.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Smartsupp is free live chat with visitor recording. Your customers are on your website right now. Chat with them and see what they do.
+Live chat suited for your WordPress website. Start a personal conversation with your visitors and turn them into happy customers.
 
 == Description ==
 
-**Try a free live chat with visitor recording**
+Smartsupp live chat enables you to start a personal conversation with your visitors and turn them into happy customers. Choose one of the most popular chat solutions in Europe, used by 283 000 websites.
 
-Smartsupp is a combination of live chat and visitor recording, making it the only tool you’ll need to get to understand your visitors. With Smartsupp you can chat with visitors in real-time and also watch their behavior on your website.
+See detailed visitor info in powerful web dashboard. Chat with customers on the go in our mobile apps for both iOS and Android. Engage visitors using automatic messages. Measure your customer care quality with detailed statistics. Get a better understanding of customer behavior thanks to visitor recording.
 
-**Know everything about your visitors**
+Your customers are browsing your website right now. **Create a free account** and start chatting with them today.
 
-The Smartsupp plugin lets you identify details of your visitors, like their name, email, or other categories you deem important. You can see all these details while chatting with that visitor so that you know who you’re chatting with (e.g., Tom Smith, who already spent $800 on your website). The visitor has to be signed in on your website for you to be able to see the info.
+**Key features**
 
-**Chat with your visitors in real time**
+* Customizable chat box
+* Customer satisfaction rating
+* Automatic messages
+* Mobile apps
+* Shortcuts (canned responses)
+* Detailed statistics
+* Easy integration with WordPress
+* Visitor recording (session replay)
+* Online support in 7 languages
+* Detailed customer info integration with WooCommerce
 
-Smartsupp allows you to help your visitors as soon as they need assistance. You’re able to answer their questions instantly in the on-site chat box. If you notice similar situations arising, create and use canned replies and automatic messages to save time. With this fully customizable, multi-language live chat, you can increase your sales up to five times.
+**Pricing**
 
-**Record the screens of your visitors**
+* Free package : free forever for 3 agents
+* Premium packages starting at 10 EUR / month / agent
 
-Watch video recordings of any visitor on your website in the Smartsupp dashboard. You’ll see their screen, mouse movements, and clicks — great for understanding the behavior of your customers.
-
-The powerful combination of live chat and visitor recordings lets you know customers’ needs even before they make a final decision. Smartsupp helps you keep them on the right track.
-
-**Features**
-
-* A fully customizable chat box
-* Visitor recordings
-* Canned replies
-* Automatic messages and offline hours
-* Unlimited chat history
-* Multi-language support
-* Native mobile apps, both for Android and iOS
+Find more details about Smartsupp and our pricing on [www.smartsupp.com](https://www.smartsupp.com).
 
 **Smartsupp is available in following languages**
 
@@ -52,22 +51,21 @@ The powerful combination of live chat and visitor recordings lets you know custo
 * Nederlands
 * Polski
 * Português (BR)
-* Slovensky
 
-**Website:** [https://www.smartsupp.com](https://www.smartsupp.com)
+If you need help please feel free to contact us at support@smartsupp.com.
 
 == Installation ==
 
 = Requires: =
-Wordpress 3.1 or higher, PHP at least 5.3.
+WordPress 3.1 or higher, PHP at least 5.3.
 
 = Instalation steps =
-1. Install Smartsupp plugin in Wordpress and activate it
-2. Login to Smartsupp or create new account in plugin settings
+1. Install Smartsupp plugin in WordPress and activate it.
+2. Login to Smartsupp or create new account in plugin settings.
 3. Now Smartsupp chat is visible on your website. Sign in to Smartsupp dashboard and start chatting with your visitors.
 
 = Installation tutorial with screenshots: =
-https://www.smartsupp.com/help/wordpress
+https://www.smartsupp.com/help/wordpress/
 
 == Frequently Asked Questions ==
 
@@ -103,7 +101,7 @@ https://www.smartsupp.com/help/wordpress
 
 = 2.6 =
 * PHP version check. At least PHP 5.3 is required during plugin activation.
-* Wordpress version check for at least version 3.1
+* WordPress version check for at least version 3.1
 * Removed some PHP warnings
 
 = 2.5 =

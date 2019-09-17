@@ -52,8 +52,8 @@ class Smartsupp_Admin
 		global $wp_version;
 
 		$checks = array(
-			'Your Wordpress version is not compatible with Smartsupp plugin which requires at least version 3.1. Please update your Wordpress or insert Smartsupp chat code into your website manually (you will find the chat code in the email we have sent you upon registration)' => version_compare($wp_version, '3.1', '<'),
-			'This plugin requires at least PHP version 5.3.0, your version: ' . PHP_VERSION . '. Please ask your hosting company to bring your PHP version up to date.' => version_compare(PHP_VERSION, '5.3.0', '<'),
+			'Your Wordpress version is not compatible with Smartsupp plugin which requires at least version 3.0. Please update your Wordpress or insert Smartsupp chat code into your website manually (you will find the chat code in the email we have sent you upon registration)' => version_compare($wp_version, '3.0', '<'),
+			'This plugin requires at least PHP version 5.3.0, your version: ' . PHP_VERSION . '. Please ask your hosting company to bring your PHP version up to date.' => version_compare(PHP_VERSION, '5.3.2', '<'),
 			'This plugin requires PHP extension \'curl\' installed and enbaled.' => !function_exists('curl_init'),
 			'This plugin requires PHP extension \'json\' installed and enbaled.' => !function_exists('json_decode'),
 		);
