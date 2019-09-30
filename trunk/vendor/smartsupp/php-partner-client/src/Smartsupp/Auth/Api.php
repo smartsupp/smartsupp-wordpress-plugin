@@ -110,7 +110,6 @@ class Api
             'X-Forwarded-For: ' . $this->getUserIpAddr(),
             'Accept-Language: ' . $this->getAcceptLanguage(),
         );
-        $this->handle->setOption(CURLOPT_HEADER, true);
         $this->handle->setOption(CURLOPT_HTTPHEADER, $headers);
 
         switch ($method) {
@@ -128,7 +127,15 @@ class Api
 
         $this->handle->close();
 
-        return $json_decode ? json_decode($response, true) : $response;
+        if ($json_decode) {
+            $response = json_decode($response, true);
+
+            if (json_last_error() != JSON_ERROR_NONE) {
+                throw new Exception('Cannot parse API response JSON. Error: ' . json_last_error_msg());
+            }
+        }
+
+        return $response;
     }
 
     /**

@@ -58,12 +58,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/smartsupp/php-auth-client.git",
-                "reference": "b6da61126b88e311442fce1e43ea2df6b02da5ea"
+                "reference": "caa587a89ae551f1356f083baf29d31567468020"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/smartsupp/php-auth-client/zipball/b6da61126b88e311442fce1e43ea2df6b02da5ea",
-                "reference": "b6da61126b88e311442fce1e43ea2df6b02da5ea",
+                "url": "https://api.github.com/repos/smartsupp/php-auth-client/zipball/caa587a89ae551f1356f083baf29d31567468020",
+                "reference": "caa587a89ae551f1356f083baf29d31567468020",
                 "shasum": ""
             },
             "require": {
@@ -90,7 +90,7 @@
             "keywords": [
                 "chat"
             ],
-            "time": "2019-09-30 13:49:24"
+            "time": "2019-09-30 15:08:09"
         }
     ],
     "packages-dev": [],
