@@ -113,6 +113,7 @@ class Smartsupp_Admin
 					'email' => $_POST['email'],
 					'password' => $_POST['password'],
                     'consentTerms' => 1,
+                    'platform' => 'WP ' . get_bloginfo('version'),
 				);
 				try {
 					$response = $formAction === 'login' ? $api->login($data) : $api->create($data + array('partnerKey' => 'k717wrqdi5'));

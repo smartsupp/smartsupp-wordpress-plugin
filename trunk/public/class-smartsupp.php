@@ -165,6 +165,7 @@ class Smartsupp
 
 		$code->setName($dashboardName);
 		$code->setEmail($userEmail);
+		$code->setPlatform('WP ' . get_bloginfo('version'));
 
 		$code->render(TRUE);
 
