@@ -115,7 +115,7 @@ class Smartsupp_Admin
                     'consentTerms' => 1,
 				);
 				try {
-					$response = $formAction === 'login' ? $api->login($data) : $api->create($data + array('partnerKey' => 'k717wrqdi5', 'lang' => $this->convertLocale(get_locale())));
+					$response = $formAction === 'login' ? $api->login($data) : $api->create($data + array('partnerKey' => 'k717wrqdi5'));
 
 					if (isset($response['error'])) {
 						$message = $response['message'];
@@ -159,34 +159,6 @@ class Smartsupp_Admin
 			'email' => $email,
             'termsConsent' => $termsConsent,
 		));
-	}
-
-
-	private function convertLocale($locale)
-	{
-		$available = array('en', 'cs', 'da', 'nl', 'fr', 'de', 'hu', 'it', 'ja', 'pl', 'br', 'pt', 'es', 'tr', 'eu', 'cn', 'tw', 'ro', 'ru', 'sk');
-		$part = strtolower(substr($locale, 0, 2));
-		$locale = strtolower(substr($locale, 0, 5));
-		if (!in_array($part, $available)) {
-			return 'en';
-		} else {
-			if ($part === 'pt') {
-				if ($locale === 'pt_br') {
-					$part = 'br';
-				}
-			} elseif ($part === 'zh') {
-				if ($locale === 'zh_cn') {
-					$part = 'cn';
-				} elseif ($locale === 'zh_tw') {
-					$part = 'tw';
-				} else {
-					$part = NULL;
-				}
-			} elseif ($part === 'eu') {
-				$part = NULL;
-			}
-			return $part ?: 'en';
-		}
 	}
 
 
