@@ -57,7 +57,7 @@ If you need help please feel free to contact us at support@smartsupp.com.
 == Installation ==
 
 = Requires: =
-WordPress 3.1 or higher, PHP at least 5.3.
+WordPress 3.0 or higher, PHP at least 5.3.2
 
 = Instalation steps =
 1. Install Smartsupp plugin in WordPress and activate it.

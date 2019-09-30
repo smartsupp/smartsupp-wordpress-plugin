@@ -41,7 +41,7 @@ class CurlRequest implements HttpRequest
      * Set cURL option with given value.
      *
      * @param string $name option name
-     * @param string $value option value
+     * @param string|array $value option value
      */
     public function setOption($name, $value)
     {

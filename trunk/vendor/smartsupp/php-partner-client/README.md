@@ -84,6 +84,9 @@ array(
 - `InvalidCredential` - email exists, bad password is incorrect.
 - `LoginFailure` - something is bad with login.
 
+## Requirements
+For backward compatibility with multiple plugins library supports PHP starting from version 5.3. It is highly possibly the constraint will change to 5.6+ in near future.
+
 ## Copyright
 
 Copyright (c) 2016 Smartsupp.com, s.r.o.

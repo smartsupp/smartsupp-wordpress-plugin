@@ -1,17 +1,17 @@
 [
     {
         "name": "smartsupp/chat-code-generator",
-        "version": "1.0",
-        "version_normalized": "1.0.0.0",
+        "version": "1.0.1",
+        "version_normalized": "1.0.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/smartsupp/chat-code-generator.git",
-            "reference": "1659eaa267318039dc65c63a8588944c69a5803c"
+            "reference": "1f63b44aeb90a1cd9e37b260a35b0ccb3377feea"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/smartsupp/chat-code-generator/zipball/1659eaa267318039dc65c63a8588944c69a5803c",
-            "reference": "1659eaa267318039dc65c63a8588944c69a5803c",
+            "url": "https://api.github.com/repos/smartsupp/chat-code-generator/zipball/1f63b44aeb90a1cd9e37b260a35b0ccb3377feea",
+            "reference": "1f63b44aeb90a1cd9e37b260a35b0ccb3377feea",
             "shasum": ""
         },
         "require": {
@@ -20,7 +20,7 @@
         "require-dev": {
             "phpunit/phpunit": "4.7.*"
         },
-        "time": "2015-12-01 14:49:12",
+        "time": "2018-11-08 15:36:32",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -48,17 +48,17 @@
     },
     {
         "name": "smartsupp/php-partner-client",
-        "version": "1.0",
-        "version_normalized": "1.0.0.0",
+        "version": "1.1",
+        "version_normalized": "1.1.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/smartsupp/php-auth-client.git",
-            "reference": "29f19b60b1c4609fd1d3a6da346b6c69dbc0a4b5"
+            "reference": "417de1d0762d9f5fd9d47a5bde35e348de92a6ec"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/smartsupp/php-auth-client/zipball/29f19b60b1c4609fd1d3a6da346b6c69dbc0a4b5",
-            "reference": "29f19b60b1c4609fd1d3a6da346b6c69dbc0a4b5",
+            "url": "https://api.github.com/repos/smartsupp/php-auth-client/zipball/417de1d0762d9f5fd9d47a5bde35e348de92a6ec",
+            "reference": "417de1d0762d9f5fd9d47a5bde35e348de92a6ec",
             "shasum": ""
         },
         "require": {
@@ -67,7 +67,7 @@
         "require-dev": {
             "phpunit/phpunit": "4.8.*"
         },
-        "time": "2016-06-28 09:23:17",
+        "time": "2019-09-24 15:46:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {

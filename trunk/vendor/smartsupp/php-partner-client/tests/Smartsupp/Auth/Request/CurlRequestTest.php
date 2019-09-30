@@ -12,7 +12,7 @@ class CurlRequestTest extends \PHPUnit_Framework_TestCase
     {
         parent::setUp();
 
-        $this->curl = new CurlRequest('https://www.smartsupp.com/cs/features');
+        $this->curl = new CurlRequest('https://www.smartsupp.com/cs/product');
     }
 
     public function test_constructorVoid()
@@ -70,9 +70,6 @@ class CurlRequestTest extends \PHPUnit_Framework_TestCase
         $this->curl->setOption(CURLOPT_URL, 'foo://bar');
         $this->curl->setOption(CURLOPT_RETURNTRANSFER, TRUE);
         $this->curl->execute();
-        $this->assertEquals(
-            $this->curl->getLastErrorMessage(),
-            'cURL failed with error #1: Protocol foo not supported or disabled in libcurl'
-        );
+        $this->assertNotEmpty($this->curl->getLastErrorMessage());
     }
 }

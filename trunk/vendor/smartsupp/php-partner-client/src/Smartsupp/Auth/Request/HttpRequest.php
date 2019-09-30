@@ -12,7 +12,7 @@ interface HttpRequest
      * Allows to set request options.
      *
      * @param string $name option name
-     * @param string $value option value
+     * @param string|array $value option value
      */
     public function setOption($name, $value);
 
