@@ -5,7 +5,7 @@ Tags: Smartsupp, chat, live chat, online chat, messaging, B2B SaaS, support chat
 Requires at least: 3.0
 Tested up to: 5.2
 Requires PHP: 5.3
-Stable tag: 3.3
+Stable tag: 3.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -77,6 +77,11 @@ https://www.smartsupp.com/help/wordpress/
 4. Mobile application
 
 == Changelog ==
+
+= 3.4 =
+* Changes in readme
+* improved country and language tracking during registration
+* composer update
 
 = 3.3 =
 * Changes to create SmartSupp account process
