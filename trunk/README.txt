@@ -71,10 +71,10 @@ https://www.smartsupp.com/help/wordpress/
 
 == Screenshots ==
 
-1. Smartsupp Dashboard
-2. Chat window - visible to customers
-3. Chat administration - visible to chat operators
-4. Mobile application
+1. Smartsupp dashboard
+2. Smartsupp chat widget
+3. Smartsupp chat bot garage
+4. Smartsupp mobile app
 
 == Changelog ==
 
