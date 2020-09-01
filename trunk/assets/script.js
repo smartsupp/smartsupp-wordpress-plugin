@@ -99,5 +99,14 @@
 				$button.show();
 			});
 		});
+
+		$('.collapse').click(function () {
+			$(this).toggleClass('closed');
+			if ($(this).next().is(':hidden')) {
+				$(this).next().slideDown('fast');
+			} else {
+				$(this).next().hide('fast');
+			}
+		});
 	});
 })(jQuery, document);

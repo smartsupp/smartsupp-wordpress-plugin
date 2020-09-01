@@ -2,191 +2,143 @@
 
 $pluginUrl = plugins_url('', dirname(__DIR__));
 
-echo '<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&amp;subset=latin,latin-ext" rel="stylesheet" property="stylesheet" type="text/css">' .
-	'<link rel="stylesheet" property="stylesheet" type="text/css" href="' . $pluginUrl . '/assets/bootstrap.min.css" />' .
+echo '<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700">' .
 	'<link rel="stylesheet" property="stylesheet" type="text/css" href="' . $pluginUrl . '/assets/style.css" />';
 
 ?><div class="wrap" id="content">
-
 	<?php if ($options['active']) { ?>
-		<main role="main">
-			<div id="third">
-				<section class="top-bar">
-					<div class="text-center">
-						<img src="<?= $pluginUrl ?>/images/logo.png" alt="smartsupp logo" />
-					</div>
-				</section>
-				<section class="deactivate">
-					<div class="row">
-						<p class="bold">
-							<span class="left"><?= isset($options['email']) ? $options['email'] : '' ?></span>
-							<span class="right"><a class="js-action-disable" href="javascript: void(0);"><?= __('Deactivate Chat', 'smartsupp-live-chat') ?></a></span>
+		<div class="active">
+			<header class="header">
+				<img src="<?= $pluginUrl ?>/images/logo.png" alt="smartsupp logo" class="header__logo" />
+				<div class="header-user">
+					<img src="<?= $pluginUrl ?>/images/avatar-grey.png" alt="" class="header-user__avatar">
+					<span class="header-user__email">
+						<?= isset($options['email']) ? $options['email'] : '' ?>
+					</span>
+					<a href="javascript: void(0);" class="js-action-disable btn btn--sm">
+						<?= __('Deactivate Chat', 'smartsupp-live-chat') ?>
+					</a>
+				</div>
+			</header>
+
+			<main class="main main--all-set">
+				<div class="main__left">
+					<div class="main-all-set">
+						<h1 class="main-all-set__h1">
+							<?= __('All set and running', 'smartsupp-live-chat') ?>
+						</h1>
+						<p class="main-all-set__text">
+							<?= __('Congratulations! Smartsupp live chat is already visible on your website.', 'smartsupp-live-chat') ?>
 						</p>
-						<div class="clear"></div>
-						<section class="intro">
-                            <h4>
-                                <strong class="green"><?= __('Smartsupp’s chat box is now visible on your website.', 'smartsupp-live-chat') ?></strong> <br /><br />
-                                <?= __('Go to Smartsupp to chat with visitors, customize chat box design and access all features.', 'smartsupp-live-chat') ?>
-                            </h4>
-							<div class="intro--btn">
-								<a href="https://dashboard.smartsupp.com?utm_source=Wordpress&utm_medium=integration&utm_campaign=link" target="_blank" class="js-register btn btn-primary btn-xl"><?= __('Go to Smartsupp', 'smartsupp-live-chat') ?></a>
-							</div>
-							<p class="tiny text-center bigger-m"><?= __('(This will open a new browser tab)', 'smartsupp-live-chat')?></p>
-						</section>
-					</div>
-				</section>
-				<section>
-					<div class="settings-container">
-						<div class="section--header">
-							<h3 class="no-margin bold"><?= __('Advanced settings', 'smartsupp-live-chat') ?></h3>
-							<p><?= __('Don\'t put the chat code here — this box is for (optional) advanced customizations via <a href="https://developers.smartsupp.com?utm_source=Wordpress&utm_medium=integration&utm_campaign=link" target="_blank">Smartsupp API</a>', 'smartsupp-live-chat') ?></p>
-						</div>
-						<div class="section--body">
-							<form action="" method="post" id="settingsForm" class="js-code-form form-horizontal" autocomplete="off">
-								<div class="alerts">
-									<?php if ($message) { ?>
-										<div class="alert alert-success">
-											<?= __($message, 'smartsupp-live-chat') ?>
-										</div>
-									<?php } ?>
-								</div>
-								<div class="form-group">
-									<div class="col-xs-12">
-										<textarea name="code" id="textAreaSettings" cols="30" rows="10"><?= stripcslashes($options['optional-code']) ?></textarea>
-									</div>
-								</div>
-								<div class="form-group">
-									<div class="col-xs-12">
-										<div class="loader"></div>
-										<button type="submit" class="btn btn-primary btn-lg" name="_submit">
-											<?= __('Save changes', 'smartsupp-live-chat') ?>
-										</button>
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-				</section>
-			</div>
-		</main>
-	<?php } else { ?>
-		<main role="main" class="sections" id="home"<?php if ($formAction) { ?> style="display: none;"<?php } ?>>
-			<div id="first">
-				<section class="top-bar">
-					<div class="">
-						<img src="<?= $pluginUrl ?>/images/logo.png" alt="smartsupp logo" />
-						<a href="javascript: void(0);" class="js-login btn btn-default"><?= __('Connect existing account', 'smartsupp-live-chat') ?></a>
-					</div>
-				</section>
-				<section class="intro">
-					<div class="">
-						<h1 class="lead"><?= __('Free live chat with visitor recording', 'smartsupp-live-chat') ?></h1>
-						<h3><?= __('Your customers are on your website right now.', 'smartsupp-live-chat') ?><br/><?= __('Chat with them and see what they do.', 'smartsupp-live-chat') ?></h3>
-						<div class="intro--btn">
-							<a href="javascript: void(0);" class="js-register btn btn-primary btn-xl"><?= __('Create a free account', 'smartsupp-live-chat') ?></a>
-						</div>
-						<div class="intro--image">
-							<img src="https://www.smartsupp.com/assets/images/dash/en.png" alt="intro" />
-						</div>
-					</div>
-				</section>
-				<section>
-					<div class=" text-center">
-						<div class="section--header">
-							<h2><?= __('Enjoy unlimited agents and chats forever for free<br />or take advantage of premium packages with advanced features.', 'smartsupp-live-chat') ?></h2>
-							<p><?= __('<strong>See all features on </strong><a href="https://www.smartsupp.com?utm_source=Wordpress&utm_medium=integration&utm_campaign=link" target="_blank"> our website.', 'smartsupp-live-chat') ?></a></p>
-						</div>
-						<div class="section--body boxies">
-							<div class="row">
-								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 box box-bubble">
-									<p class="bold"><?= __('Chat with visitors in real-time', 'smartsupp-live-chat') ?></p>
-									<p class="tiny"><?= __('Answering questions right away improves loyalty and helps you build closer relationships with your customers.', 'smartsupp-live-chat') ?></p>
-								</div>
-								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 box box-graph">
-									<p class="bold"><?= __('Increase online sales', 'smartsupp-live-chat') ?></p>
-									<p class="tiny"><?= __('Turn your visitors into customers.<br />Visitors who chat with you buy up to 5x more often - measurable in Google Analytics.', 'smartsupp-live-chat') ?></p>
-								</div>
-								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 box box-mouse">
-									<p class="bold"><?= __('Visitor screen recording', 'smartsupp-live-chat') ?></p>
-									<p class="tiny"><?= __('Watch visitor\'s behavior on your store.<br />You see his screen, mouse movement, clicks and what he filled into forms.', 'smartsupp-live-chat') ?></p>
-								</div>
-							</div>
-						</div>
-						<?= $customers ?>
-					</div>
-				</section>
-			</div>
-		</main>
-		<main role="main" class="sections" id="connect"<?php if (!$formAction) { ?> style="display: none;"<?php } ?>>
-			<div id="second">
-				<section class="top-bar">
-					<div>
-						<a href="javascript: void(0);" class="js-close-form">
-							<img src="<?= $pluginUrl ?>/images/logo.png" alt="smartsupp logo" />
-							<a href="javascript: void(0);" class="btn btn-default" data-toggle-form data-multitext data-register="<?= __('Connect existing account', 'smartsupp-live-chat') ?>" data-login="<?= __('Create a free account', 'smartsupp-live-chat') ?>">
-								<?= __($formAction === 'register' ? 'Connect existing account' : 'Create a free account', 'smartsupp-live-chat') ?>
-							</a>
+						<a href="https://dashboard.smartsupp.com?utm_source=Wordpress&utm_medium=integration&utm_campaign=link" target="_blank" class="btn btn--primary btn--arrow">
+							<?= __('Chat with your visitors', 'smartsupp-live-chat') ?>
 						</a>
+						<p class="main-all-set__bottom-text">
+							<?= __('or <a href="https://app.smartsupp.com/app/settings/chatbox/text?utm_source=Wordpress&utm_medium=integration&utm_campaign=link" target="_blank">Set up</a> chat box design first') ?>
+						</p>
 					</div>
-				</section>
-				<section id="signUp">
-					<div class="text-center">
-						<div class="form-container">
-							<div class="section--header">
-								<h1 class="lead" data-multitext data-login="<?= __('Connect existing account', 'smartsupp-live-chat') ?>" data-register="<?= __('Create a free account', 'smartsupp-live-chat') ?>">
-									<?= __($formAction === 'login' ? 'Connect existing account' : 'Create a free account', 'smartsupp-live-chat') ?>
-								</h1>
-							</div>
-							<div class="section--body">
-								<div class="form--inner">
-									<form action="" method="post" id="signUpForm" class="form-horizontal<?= $formAction ? (' js-' . $formAction . '-form') : '' ?>" data-toggle-class autocomplete="off">
-										<div class="alerts">
-											<?php if ($message) { ?>
-												<div class="alert alert-danger js-clear">
-													<?= __($message, 'smartsupp-live-chat') ?>
-												</div>
-											<?php } ?>
-										</div>
-										<div class="form-group">
-											<label class="visible-xs control-label col-xs-12" for="frm-signUp-form-email"><?= __('E-mail', 'smartsupp-live-chat') ?></label>
-											<div class="col-xs-12">
-												<div class="input-group">
-													<span class="input-group-addon hidden-xs" style="min-width: 150px;"><?= __('E-mail', 'smartsupp-live-chat') ?></span>
-													<input type="email" class="form-control input-lg" name="email" id="frm-signUp-form-email" required="" value="<?= isset($email) ? $email : '' ?>">
-												</div>
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="visible-xs control-label col-xs-12" for="frm-signUp-form-password"><?= __('Password', 'smartsupp-live-chat') ?></label>
-											<div class="col-xs-12">
-												<div class="input-group">
-													<span class="input-group-addon hidden-xs" style="min-width: 150px;"><?= __('Password', 'smartsupp-live-chat') ?></span>
-													<input type="password" class="form-control input-lg" name="password" autocomplete="off" id="frm-signUp-form-password" required="">
-												</div>
-											</div>
-										</div>
-                                        <div class="gdpr checkbox">
-                                            <label for="frm-signUp-form-termsConsent">
-                                                <input <?= !empty($termsConsent) ? 'checked="checked"' : '' ?> value="1" type="checkbox" name="termsConsent" id="frm-signUp-form-termsConsent" required="">&nbsp;<?= __('I have read and agree with <a href="https://www.smartsupp.com/terms" target="_blank">Terms</a> and <a href="https://www.smartsupp.com/dpa" target="_blank">DPA</a>', 'smartsupp-live-chat'); ?>
-                                            </label>
-                                        </div>
-										<div class="form-group">
-											<div class="col-xs-12 form-button">
-												<div class="loader"></div>
-												<button type="submit" class="btn btn-primary btn-lg btn-block" name="_submit" data-multitext data-login="<?= __('Connect account', 'smartsupp-live-chat') ?>" data-register="<?= __('Sign up', 'smartsupp-live-chat') ?>">
-													<?= $formAction === 'login' ? __('Connect account', 'smartsupp-live-chat') : __('Sign up', 'smartsupp-live-chat') ?>
-												</button>
-											</div>
-										</div>
-									</form>
-								</div>
+				</div>
+				<div class="main__right">
+					<img src="<?= $pluginUrl ?>/images/all-set-and-running.png" alt="All set and running" class="main__image">
+				</div>
+			</main>
+
+			<section class="advanced">
+				<div class="advanced__header collapse">
+					<span class="advanced__caret"></span> <?= __('Advanced settings', 'smartsupp-chat') ?>
+				</div>
+				<div class="advanced__content">
+					<p class="advanced__text">
+						<?= __('Don\'t put the chat code here! This box is for (optional) advanced customizations via <a href="https://developers.smartsupp.com?utm_source=Wordpress&utm_medium=integration&utm_campaign=link" target="_blank">Smartsupp API</a>', 'smartsupp-live-chat') ?>
+					</p>
+					<form action="" method="post" id="settingsForm" class="js-code-form" autocomplete="off">
+						<textarea name="code" id="textAreaSettings" class="input input--area" cols="30" rows="10">
+							<?= $options['optional-code'] ?>
+						</textarea>
+						<div class="advanced__bottom">
+							<button type="submit" name="_submit" class="btn btn--sm">
+								<?= __('Save changes', 'smartsupp-live-chat') ?>
+							</button>
+
+							<div class="saved">
+								<?php if ($message) { ?>
+									<img src="<?= $pluginUrl ?>/images/all-changes-saved.png" alt="saved" class="saved__img">
+									<p class="saved__text">
+										<?= __($message, 'smartsupp-live-chat') ?>
+									</p>
+								<?php } ?>
 							</div>
 						</div>
-						<?= $customers ?>
+					</form>
+				</div>
+			</section>
+		</div>
+	<?php } else { ?>
+		<div class="">
+			<header class="header">
+				<img src="<?= $pluginUrl ?>/images/logo.png" alt="smartsupp logo" class="header__logo" />
+				<div class="header-user">
+					<span class="header-user__email" data-toggle-form data-multitext data-register="<?= __('Already have an account?', 'smartsupp-live-chat') ?>" data-login="<?= __('Not a Smartsupp user yet?', 'smartsupp-live-chat') ?>">
+						<?= __($formAction === 'login' ? 'Not a Smartsupp user yet?' : 'Already have an account?') ?>
+					</span>
+					<a href="javascript: void(0);" class="btn btn--sm" data-toggle-form data-multitext data-register="<?= __('Log in', 'smartsupp-live-chat') ?>" data-login="<?= __('Create a free account', 'smartsupp-live-chat') ?>">
+						<?= __($formAction === 'login' ? 'Create a free account' : 'Log in', 'smartsupp-live-chat') ?>
+					</a>
+				</div>
+			</header>
+
+			<main class="main" role="main" id="connect">
+				<div class="main__left">
+					<div class="main-form">
+						<h1 class="main-form__h1" data-multitext data-login="<?= __('Log in', 'smartsupp-live-chat') ?>" data-register="<?= __('Create a free account', 'smartsupp-live-chat') ?>">
+							<?= __($formAction === 'login' ? 'Log in' : 'Create a free account', 'smartsupp-live-chat') ?>
+						</h1>
+						<p class="main-form__top-text<?= $formAction ? (' js-' . $formAction . '-form') : '' ?>" data-toggle-class>
+							<?= __('Start personal conversation with your visitors today.', 'smartsupp-live-chat') ?>
+						</p>
+						<form action="" method="post" id="signUpForm" class="form-horizontal<?= $formAction ? (' js-' . $formAction . '-form') : ' js-register-form' ?>" data-toggle-class autocomplete="off">
+							<div class="alerts">
+								<?php if ($message) { ?>
+									<div class="alert alert-danger js-clear">
+										<?= __($message, 'smartsupp-live-chat') ?>
+									</div>
+								<?php } ?>
+							</div>
+							<input type="email" class="input" placeholder="<?= __('Email:', 'smartsupp-live-chat') ?>" name="email" id="frm-signUp-form-email" required="" value="<?= isset($email) ? $email : '@' ?>">
+							<input type="password" class="input" placeholder="<?= __('Password:', 'smartsupp-live-chat') ?>" name="password" autocomplete="off" id="frm-signUp-form-password" required="">
+                            <label class="checkbox<?= $formAction ? (' js-' . $formAction . '-form') : '' ?>" data-toggle-class>
+								<input type="checkbox" class="checkbox__input" name="newsletter">
+								<div class="checkbox__shape"></div>
+								<div class="checkbox__title checkbox__title--small">
+									<?= __('I want to get tips on how to use Smartsupp chat to the maximum and do excellent customer care', 'smartsupp-live-chat') ?>
+								</div>
+							</label>
+							<div class="loader"></div>
+							<button type="submit" name="_submit" class="btn btn--primary btn--arrow btn--all-width" data-multitext data-login="<?= __('Log in', 'smartsupp-live-chat') ?>" data-register="<?= __('Create a free account', 'smartsupp-live-chat') ?>">
+								<?= $formAction === 'login' ? __('Log in', 'smartsupp-live-chat') : __('Create a free account', 'smartsupp-live-chat') ?>
+							</button>
+							<p class="main-form__bottom-text<?= $formAction ? (' js-' . $formAction . '-form') : ' js-register-form' ?>" data-toggle-class>
+								<span class="js-login">
+									<?= __('<a href="https://app.smartsupp.com/app/sign/reset" target="_blank">I forgot my password</a>') ?>
+								</span>
+								<span class="js-register">
+									<?= __('By signing up, you agree with <a href="https://www.smartsupp.com/terms" target="_blank">Terms</a> and <a href="https://www.smartsupp.com/dpa" target="_blank">DPA</a>') ?>
+								</span>
+							</p>
+						</form>
 					</div>
-				</section>
-			</div>
-		</main>
+				</div>
+
+				<div class="main__right">
+					<img src="<?= $pluginUrl ?>/images/tablet-screen.png">
+				</div>
+
+			</main>
+
+			<?= $features ?>
+			<?= $customers ?>
+
+		</div>
 	<?php } ?>
 
 </div>

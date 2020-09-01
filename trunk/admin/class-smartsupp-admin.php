@@ -86,7 +86,7 @@ class Smartsupp_Admin
 
 		add_menu_page(
 			__('Smartsupp Live Chat - Settings', $this->plugin_slug),
-			__('Smartsupp Chat', $this->plugin_slug),
+			__('Smartsupp', $this->plugin_slug),
 			'manage_options',
 			$this->plugin_slug,
 			array($this, 'renderAdminPage'),
@@ -154,6 +154,7 @@ class Smartsupp_Admin
         $this->render('views/admin.php', array(
 			'domain' => $this->plugin_slug,
 			'customers' => $this->getCustomers(),
+			'features' => $this->getFeatures(),
 			'options' => $this->getOptions(),
 			'message' => (string) $message,
 			'formAction' => $formAction,
@@ -171,22 +172,67 @@ class Smartsupp_Admin
 		}, array());
 	}
 
+	private function getFeatures()
+	{
+		$pluginUrl = $this->getPluginUrl();
+		return
+		'<section class="features">' .
+			'<div class="features__container">' .
+				'<div class="features__item">' .
+					'<span class="features__header">' .
+						__('MULTICHANNEL', 'smartsupp-live-chat', $this->plugin_slug) .
+					'</span>' .
+					'<img src="' . $pluginUrl . '/images/multichannel.png">' .
+					'<h2 class="features__item-title">' .
+						__('Respond to customers\' chats and emails from one place', $this->plugin_slug) .
+					'</h2>' .
+				'</div>' .
+				'<div class="features__item">' .
+					'<span class="features__header">' .
+						__('CHAT BOT', 'smartsupp-live-chat', $this->plugin_slug) .
+					'</span>' .
+					'<img src="' . $pluginUrl . '/images/chatbot.png">' .
+					'<h2 class="features__item-title">' .
+						__('Engage your visitors with automated chat bot', $this->plugin_slug) .
+					'</h2>' .
+				'</div>' .
+				'<div class="features__item">' .
+					'<span class="features__header">' .
+						__('MOBILE APP', 'smartsupp-live-chat', $this->plugin_slug) .
+					'</span>' .
+					'<img src="' . $pluginUrl . '/images/mobile.png">' .
+					'<h2 class="features__item-title">' .
+						__('Chat with customers on the go with app for iOS & Android', $this->plugin_slug) .
+					'</h2>' .
+				'</div>' .
+			'</div>' .
+			'<div class="features__all">' .
+				'<a href="https://smartsupp.com" target="_blank" class="btn btn--link btn--arrow">' .
+					__('Explore All Features on our website', $this->plugin_slug) .
+				'</a>' .
+			'</div>' .
+		'</section>';
+	}
 
 	private function getCustomers()
 	{
 		$pluginUrl = $this->getPluginUrl();
 		return
-		'<div class="section--header">' .
-			'<h2>' . __('Trusted by more than 55 000 companies', $this->plugin_slug) . '</h2>' .
-		'</div>' .
-		'<div class="section--body">' .
-			'<div class="customers">' .
-				'<img class="partner" src="' . $pluginUrl . '/images/skoda.png" alt="ŠKODA AUTO a.s." />' .
-				'<img class="partner" src="' . $pluginUrl . '/images/gekko.png" alt="GEKKO Computer" />' .
-				'<img class="partner" src="' . $pluginUrl . '/images/lememo.png" alt="Lememo" />' .
-				'<img class="partner" src="' . $pluginUrl . '/images/conrad.png" alt="Conrad" />' .
+		'<section class="clients">' .
+			'<div class="clients__container">' .
+				'<div class="clients__pretitle">' .
+					__('POPULAR CHAT SOLUTION OF EUROPEAN WEBSHOPS AND WEBSITES', $this->plugin_slug) .
+				'</div>' .
+				'<h2 class="clients__title">' .
+					__('Join the 338 445 companies and freelancers relying on Smartsupp', $this->plugin_slug) .
+				'</h2>' .
+				'<div class="clients__logos">' .
+					'<img src="' . $pluginUrl . '/images/insportline.png" alt="insportline" />' .
+					'<img src="' . $pluginUrl . '/images/redfox.png" alt="redfox" />' .
+					'<img src="' . $pluginUrl . '/images/motorgarten.png" alt="motorgarten" />' .
+					'<img src="' . $pluginUrl . '/images/travelking.png" alt="travelking" />' .
 			'</div>' .
-		'</div>';
+		'</section>';
 	}
 
 
