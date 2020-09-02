@@ -1638,7 +1638,6 @@ a:active {
 }
 
 .clients__container {
-	max-width: 676px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -1656,6 +1655,8 @@ a:active {
 .clients__logos {
 	max-width: 100%;
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .clients__logos img {
