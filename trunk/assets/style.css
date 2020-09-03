@@ -1670,6 +1670,7 @@ a:active {
 
 .clients__logos img {
 	height: 100px;
+	margin: 0 1rem;
 }
 
 .advanced {
