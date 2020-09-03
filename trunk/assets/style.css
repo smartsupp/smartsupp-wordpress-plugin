@@ -754,7 +754,7 @@ a:active {
 	opacity: 1!important;
 }
 .wrap#content {
-	background: #fff;
+	background: #f5fbff;
 	margin: 0 0 0 -20px;
 	min-height: calc(100vh - 35px);
 	padding-bottom: 0;
@@ -1360,6 +1360,7 @@ a:active {
 	padding: 40px 24px;
 	display: flex;
 	justify-content: space-between;
+	background: #fff;
 }
 
 .header__logo {
@@ -1397,13 +1398,16 @@ a:active {
 @media (max-width: 575px) {
 	.header-user {
 		flex-wrap: wrap;
+		justify-content: center;
+		width: 100%;
 	}
 }
 
 .main {
 	display: flex;
-	margin-bottom: 3rem;
+	padding-bottom: 3rem;
 	overflow: hidden;
+	background: #fff;
 }
 
 .main__left {
@@ -1589,6 +1593,11 @@ a:active {
 	}
 }
 
+.features {
+	background: #fff;
+	padding-bottom: 25px;
+}
+
 .features__header {
 	color: #fb53b2;
 }
@@ -1632,8 +1641,8 @@ a:active {
 	position: relative;
 	max-width: 100%;
 	overflow: hidden;
-	margin-top: 20px;
-	padding: 50px 15px;
+	margin-top: 25px;
+	padding: 25px 15px;
 	background-color: #f5fbff;
 }
 
