@@ -102,7 +102,7 @@ class Smartsupp_Admin
 			return;
 		}
 
-		$formAction = $message = $email = $termsConsent = NULL;
+		$formAction = $message = $email = $marketingConsent = $termsConsent = NULL;
 		$action = (string) $_GET['ssaction'];
 		switch ($action) {
 			case 'login':
@@ -112,7 +112,8 @@ class Smartsupp_Admin
 				$data = array(
 					'email' => $_POST['email'],
 					'password' => $_POST['password'],
-                    'consentTerms' => 1,
+					'consentTerms' => 1,
+					'consentMarketing' => $_POST['marketing'],
                     'platform' => 'WP ' . get_bloginfo('version'),
 				);
 				try {
@@ -121,14 +122,14 @@ class Smartsupp_Admin
 					if (isset($response['error'])) {
 						$message = $response['message'];
 						$email = $_POST['email'];
-                        $termsConsent = $_POST['termsConsent'];
 					} else {
 						$this->activate($response['account']['key'], $_POST['email']);
 					}
 				} catch (Exception $e) {
 					$message = $e->getMessage();
 					$email = $_POST['email'];
-                    $termsConsent = $_POST['termsConsent'];
+					$marketingConsent = $_POST['marketing'];
+                    $termsConsent = 1;
 				}
 				break;
 			case 'update':
@@ -144,12 +145,12 @@ class Smartsupp_Admin
 				$message = 'Invalid action';
 				break;
 		}
-		$this->renderAdminPage($message, $formAction, $email, $termsConsent);
+		$this->renderAdminPage($message, $formAction, $email, $marketingConsent, $termsConsent);
 		exit;
 	}
 
 
-	public function renderAdminPage($message = NULL, $formAction = NULL, $email = NULL, $termsConsent = NULL)
+	public function renderAdminPage($message = NULL, $formAction = NULL, $email = NULL, $marketingConsent = NULL, $termsConsent = NULL)
 	{
         $this->render('views/admin.php', array(
 			'domain' => $this->plugin_slug,
@@ -159,6 +160,7 @@ class Smartsupp_Admin
 			'message' => (string) $message,
 			'formAction' => $formAction,
 			'email' => $email,
+			'marketingConsent' => $marketingConsent,
             'termsConsent' => $termsConsent,
 		));
 	}

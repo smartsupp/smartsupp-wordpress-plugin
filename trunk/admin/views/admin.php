@@ -121,7 +121,7 @@ echo '<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppi
 							<input type="email" class="input" placeholder="<?= __('Email:', 'smartsupp-live-chat') ?>" name="email" id="frm-signUp-form-email" required="" value="<?= isset($email) ? $email : '@' ?>">
 							<input type="password" class="input" placeholder="<?= __('Password:', 'smartsupp-live-chat') ?>" name="password" autocomplete="off" id="frm-signUp-form-password" required="">
                             <label class="checkbox<?= $formAction ? (' js-' . $formAction . '-form') : '' ?>" data-toggle-class>
-								<input type="checkbox" class="checkbox__input" name="newsletter">
+								<input type="checkbox" class="checkbox__input" name="marketing">
 								<div class="checkbox__shape"></div>
 								<div class="checkbox__title checkbox__title--small">
 									<?= __('I want to get tips on how to use Smartsupp chat to the maximum and do excellent customer care', 'smartsupp-live-chat') ?>
