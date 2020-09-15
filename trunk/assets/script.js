@@ -100,6 +100,7 @@
 			});
 		});
 
+		// advanced settings
 		$('.collapse').click(function () {
 			$(this).toggleClass('closed');
 			if ($(this).next().is(':hidden')) {
@@ -107,6 +108,13 @@
 			} else {
 				$(this).next().hide('fast');
 			}
+		});
+
+		// navbar responsive
+		$('.navbar-toggle, nav').click(function(){
+			$('.navbar-toggle').toggleClass('navbar-on');
+			$('nav').fadeToggle("fast");
+			$('nav').removeClass('hide--up-md');
 		});
 	});
 })(jQuery, document);

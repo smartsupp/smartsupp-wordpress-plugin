@@ -2,7 +2,7 @@
 
 $pluginUrl = plugins_url('', dirname(__DIR__));
 
-echo '<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700">' .
+echo '<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700">' .
 	'<link rel="stylesheet" property="stylesheet" type="text/css" href="' . $pluginUrl . '/assets/style.css" />';
 
 ?><div class="wrap" id="content">
@@ -10,18 +10,25 @@ echo '<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppi
 		<div class="active">
 			<header class="header">
 				<img src="<?= $pluginUrl ?>/images/logo.png" alt="smartsupp logo" class="header__logo" />
-				<div class="header-user">
-					<img src="<?= $pluginUrl ?>/images/avatar-grey.png" alt="" class="header-user__avatar">
-					<span class="header-user__email">
-						<?= isset($options['email']) ? $options['email'] : '' ?>
-					</span>
-					<a href="javascript: void(0);" class="js-action-disable btn btn--sm">
-						<?= __('Deactivate Chat', 'smartsupp-live-chat') ?>
-					</a>
+				<nav class="hide--up-md">
+					<div class="header-user">
+						<img src="<?= $pluginUrl ?>/images/avatar-grey.png" alt="" class="header-user__avatar">
+						<span class="header-user__email">
+							<?= isset($options['email']) ? $options['email'] : '' ?>
+						</span>
+						<a href="javascript: void(0);" class="js-action-disable btn btn--sm btn-center">
+							<?= __('Deactivate Chat', 'smartsupp-live-chat') ?>
+						</a>
+					</div>
+				</nav>
+				<div class="navbar-toggle">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
 				</div>
 			</header>
 
-			<main class="main main--all-set">
+			<main class="main main--all-set" role="main">
 				<div class="main__left">
 					<div class="main-all-set">
 						<h1 class="main-all-set__h1">
@@ -39,7 +46,7 @@ echo '<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppi
 					</div>
 				</div>
 				<div class="main__right">
-					<img src="<?= $pluginUrl ?>/images/all-set-and-running.png" alt="All set and running" class="main__image">
+					<img src="<?= $pluginUrl ?>/images/done.png" alt="All set and running">
 				</div>
 			</main>
 
@@ -77,13 +84,20 @@ echo '<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppi
 		<div class="">
 			<header class="header">
 				<img src="<?= $pluginUrl ?>/images/logo.png" alt="smartsupp logo" class="header__logo" />
-				<div class="header-user">
-					<span class="header-user__email" data-toggle-form data-multitext data-register="<?= __('Already have an account?', 'smartsupp-live-chat') ?>" data-login="<?= __('Not a Smartsupp user yet?', 'smartsupp-live-chat') ?>">
-						<?= __($formAction === 'login' ? 'Not a Smartsupp user yet?' : 'Already have an account?') ?>
-					</span>
-					<a href="javascript: void(0);" class="btn btn--sm" data-toggle-form data-multitext data-register="<?= __('Log in', 'smartsupp-live-chat') ?>" data-login="<?= __('Create a free account', 'smartsupp-live-chat') ?>">
-						<?= __($formAction === 'login' ? 'Create a free account' : 'Log in', 'smartsupp-live-chat') ?>
-					</a>
+				<nav class="hide--up-md">
+					<div class="header-user">
+						<span class="header-user__email" data-toggle-form data-multitext data-register="<?= __('Already have an account?', 'smartsupp-live-chat') ?>" data-login="<?= __('Not a Smartsupp user yet?', 'smartsupp-live-chat') ?>">
+							<?= __($formAction === 'login' ? 'Not a Smartsupp user yet?' : 'Already have an account?') ?>
+						</span>
+						<a href="javascript: void(0);" class="btn btn--sm" data-toggle-form data-multitext data-register="<?= __('Log in', 'smartsupp-live-chat') ?>" data-login="<?= __('Create a free account', 'smartsupp-live-chat') ?>">
+							<?= __($formAction === 'login' ? 'Create a free account' : 'Log in', 'smartsupp-live-chat') ?>
+						</a>
+					</div>
+				</nav>
+				<div class="navbar-toggle">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
 				</div>
 			</header>
 
