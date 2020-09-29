@@ -101,7 +101,7 @@
 		});
 
 		// advanced settings
-		$('.collapse').click(function () {
+		$document.on('click', '.collapse', function () {
 			$(this).toggleClass('closed');
 			if ($(this).next().is(':hidden')) {
 				$(this).next().slideDown('fast');
@@ -111,7 +111,7 @@
 		});
 
 		// navbar responsive
-		$('.navbar-toggle, nav').click(function(){
+		$document.on('click', '.navbar-toggle, nav', function() {
 			$('.navbar-toggle').toggleClass('navbar-on');
 			$('nav').fadeToggle("fast");
 			$('nav').removeClass('hide--up-md');

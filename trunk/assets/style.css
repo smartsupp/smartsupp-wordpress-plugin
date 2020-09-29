@@ -908,7 +908,7 @@ a:active {
 	background-color: #fbfbfb!important;
 	min-height: 35px!important;
 	width: 100%;
-	border-radius: 0!important;
+	border-radius: 4px!important;
 }
 
 .input--error .input__area:focus+.input__label {
@@ -1155,7 +1155,7 @@ a:active {
 	font-size: 1rem;
 	font-weight: 500;
 	border: 1px solid #c7cfd9;
-	border-radius: 0;
+	border-radius: 4px;
 	cursor: pointer;
 }
 
@@ -1309,6 +1309,10 @@ a:active {
 	border: none;
 	box-shadow: none;
 	font-weight: 400;
+}
+.btn--link:hover,
+.btn--link:active {
+	color: #408fec;
 }
 
 .btn--primary,
@@ -1485,7 +1489,6 @@ a:active {
 	.header-user .btn {
 		margin-top: 2rem;
 		color: #fff;
-		border-radius: 4px;
 		background: transparent;
 	}
 	.header-user__avatar {
@@ -1524,6 +1527,11 @@ a:active {
 
 .main__right img {
 	max-height: 650px;
+	image-rendering: -moz-crisp-edges;
+	image-rendering:   -o-crisp-edges;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: crisp-edges;
+	-ms-interpolation-mode: nearest-neighbor;
 }
 
 .main__right--all-set {
@@ -1711,6 +1719,7 @@ a:active {
 
 .features__header {
 	color: #fb53b2;
+	letter-spacing: 1px;
 }
 
 .features__container {

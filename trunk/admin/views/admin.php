@@ -46,15 +46,15 @@ echo '<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppi
 					</div>
 				</div>
 				<div class="main__right">
-					<img src="<?= $pluginUrl ?>/images/done.png" alt="All set and running">
+					<img src="<?= $pluginUrl ?>/images/all-done.png" alt="All set and running">
 				</div>
 			</main>
 
 			<section class="advanced">
-				<div class="advanced__header collapse">
+				<div class="advanced__header collapse closed">
 					<span class="advanced__caret"></span> <?= __('Advanced settings', 'smartsupp-chat') ?>
 				</div>
-				<div class="advanced__content">
+				<div class="advanced__content" style="display:none">
 					<p class="advanced__text">
 						<?= __('Don\'t put the chat code here! This box is for (optional) advanced customizations via <a href="https://developers.smartsupp.com?utm_source=Wordpress&utm_medium=integration&utm_campaign=link" target="_blank">Smartsupp API</a>', 'smartsupp-live-chat') ?>
 					</p>
@@ -94,11 +94,11 @@ echo '<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppi
 						</a>
 					</div>
 				</nav>
-				<div class="navbar-toggle">
+				<a href="javascript: void(0);" class="navbar-toggle">
 					<div class="line"></div>
 					<div class="line"></div>
 					<div class="line"></div>
-				</div>
+				</a>
 			</header>
 
 			<main class="main" role="main" id="connect">
