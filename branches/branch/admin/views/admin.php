@@ -51,17 +51,15 @@ echo '<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppi
 			</main>
 
 			<section class="advanced">
-				<div class="advanced__header collapse closed">
+				<div class="advanced__header collapse<?php if (!$options['optional-code']) { ?> closed<?php } ?>">
 					<span class="advanced__caret"></span> <?= __('Advanced settings', 'smartsupp-chat') ?>
 				</div>
-				<div class="advanced__content" style="display:none">
+				<div class="advanced__content"<?php if (!$options['optional-code']) { ?> style="display: none;"<?php } ?>>
 					<p class="advanced__text">
 						<?= __('Don\'t put the chat code here! This box is for (optional) advanced customizations via <a href="https://developers.smartsupp.com?utm_source=Wordpress&utm_medium=integration&utm_campaign=link" target="_blank">Smartsupp API</a>', 'smartsupp-live-chat') ?>
 					</p>
 					<form action="" method="post" id="settingsForm" class="js-code-form" autocomplete="off">
-						<textarea name="code" id="textAreaSettings" class="input input--area" cols="30" rows="10">
-							<?= $options['optional-code'] ?>
-						</textarea>
+						<textarea name="code" id="textAreaSettings" class="input input--area" cols="30" rows="10"><?= stripcslashes($options['optional-code']); ?></textarea>
 						<div class="advanced__bottom">
 							<button type="submit" name="_submit" class="btn btn--sm">
 								<?= __('Save changes', 'smartsupp-live-chat') ?>
