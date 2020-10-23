@@ -103,11 +103,7 @@
 		// advanced settings
 		$document.on('click', '.collapse', function () {
 			$(this).toggleClass('closed');
-			if ($(this).next().is(':hidden')) {
-				$(this).next().slideDown('fast');
-			} else {
-				$(this).next().hide('fast');
-			}
+			$(this).next().slideToggle('fast');
 		});
 
 		// navbar responsive
