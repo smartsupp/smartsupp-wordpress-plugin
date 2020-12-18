@@ -1,5 +1,5 @@
 === Smartsupp Live Chat ===
-Contributors: smartsupp, marekgach
+Contributors: smartsupp, marekgach, huttenbachmedard
 Donate link:
 Tags: Smartsupp, chat, live chat, online chat, messaging, B2B SaaS, support chat, web chat, free live chat, chat for web, chat online, chat software, free chat, jivochat, jivosite, live chat, live chat inc, live support, live web chat, livechat, olark, online chat, online support, snapengage, wordpress chat, wordpress live chat, Zopim, Tawk.to, Tidio, Tidio chat, Crisp, Crisp chat, Drift, Smartsupp, Smartsup, Smartsapp, Boldchat, Live person, pure chat, chatra, userlike, liveagent, helpcrunch
 Requires at least: 3.0
