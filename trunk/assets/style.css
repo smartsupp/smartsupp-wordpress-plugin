@@ -1364,8 +1364,31 @@ a:active {
 	margin-bottom: 1rem;
 }
 
+.alert a {
+	color: #06253e;
+	text-decoration: underline;
+}
+
 .alert-danger {
 	background: #f2dede;
+}
+
+.alert-warning {
+	background: #fdf5d0;
+	color: #06253e;
+}
+
+.alert.gift {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: -2rem;
+	z-index: 2;
+	position: relative;
+}
+
+.alert.gift img {
+	margin-right: 1rem;
 }
 
 /* Layout

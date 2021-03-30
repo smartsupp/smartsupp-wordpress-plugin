@@ -151,10 +151,10 @@ class Smartsupp
 			$user = wp_get_current_user();
 			$dashboardName = $user->display_name . ' (' . $user->ID . ')';
 
-			$code->setVariable('userName', __('Username'), $user->user_login);
-			$code->setVariable('email', __('Email'), $userEmail = $user->user_email);
-			$code->setVariable('role', __('Role'), implode(' ,', $user->roles));
-			$code->setVariable('name', __('Name'), $user->first_name . ' ' . $user->last_name);
+			$code->setVariable('userName', __('Username', 'smartsupp-live-chat'), $user->user_login);
+			$code->setVariable('email', __('Email', 'smartsupp-live-chat'), $userEmail = $user->user_email);
+			$code->setVariable('role', __('Role', 'smartsupp-live-chat'), implode(' ,', $user->roles));
+			$code->setVariable('name', __('Name', 'smartsupp-live-chat'), $user->first_name . ' ' . $user->last_name);
 
 			if (self::is_woocommerce_active()) {
 				$this->addBillingLocation($code, $user);
@@ -185,14 +185,14 @@ class Smartsupp
 			$location = '-';
 		}
 
-		$code->setVariable('billingLocation', __('Billing Location'), $location);
+		$code->setVariable('billingLocation', __('Billing Location', 'smartsupp-live-chat'), $location);
 	}
 
 
 	private function addSpent(ChatGenerator $code, $user)
 	{
 		global $wpdb;
-		if (!$spent = get_user_meta($user->ID, '_money_spent', TRUE)) {
+		if (!get_user_meta($user->ID, '_money_spent', TRUE)) {
 			$spent = $wpdb->get_var("SELECT SUM(meta2.meta_value)
 				FROM $wpdb->posts as posts
 
@@ -207,22 +207,24 @@ class Smartsupp
 			");
 
 			update_user_meta($user->ID, '_money_spent', $spent);
-		}
+		} 
+		
+		$spent = get_user_meta($user->ID, '_money_spent', TRUE);
 
 		if (!$spent) {
 			$spent = 0;
 		}
 
-		$formattedSpent = sprintf(get_woocommerce_price_format(), get_woocommerce_currency_symbol(), $spent);
+		$formattedSpent = sprintf(get_woocommerce_price_format(), html_entity_decode(get_woocommerce_currency_symbol()), $spent);
 
-		$code->setVariable('spent', __('Spent'), $formattedSpent);
+		$code->setVariable('spent', __('Spent', 'smartsupp-live-chat'), $formattedSpent);
 	}
 
 
 	private function addOrder(ChatGenerator $code, $user)
 	{
 		global $wpdb;
-		if (!$count = get_user_meta($user->ID, '_order_count', TRUE)) {
+		if (!get_user_meta($user->ID, '_order_count', TRUE)) {
 			$count = $wpdb->get_var("SELECT COUNT(*)
 				FROM $wpdb->posts as posts
 
@@ -235,11 +237,13 @@ class Smartsupp
 			");
 
 			update_user_meta($user->ID, '_order_count', $count);
-		}
+		} 
+
+		$count = get_user_meta($user->ID, '_order_count', TRUE);
 
 		$count = absint($count);
 
-		$code->setVariable('order', __('Order'), $count);
+		$code->setVariable('order', __('Orders', 'smartsupp-live-chat'), $count);
 	}
 
 }

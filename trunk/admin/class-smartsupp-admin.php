@@ -77,16 +77,16 @@ class Smartsupp_Admin
 	public function addMenuItems()
 	{
 		add_options_page(
-			__('Smartsupp Live Chat - Settings', $this->plugin_slug),
-			__('Smartsupp Live Chat', $this->plugin_slug),
+			__('Smartsupp Live Chat - Settings', 'smartsupp-live-chat'),
+			__('Smartsupp Live Chat', 'smartsupp-live-chat'),
 			'manage_options',
 			$this->plugin_slug,
 			array($this, 'renderAdminPage')
 		);
 
 		add_menu_page(
-			__('Smartsupp Live Chat - Settings', $this->plugin_slug),
-			__('Smartsupp', $this->plugin_slug),
+			__('Smartsupp Live Chat - Settings', 'smartsupp-live-chat'),
+			__('Smartsupp', 'smartsupp-live-chat'),
 			'manage_options',
 			$this->plugin_slug,
 			array($this, 'renderAdminPage'),
@@ -182,35 +182,35 @@ class Smartsupp_Admin
 			'<div class="features__container">' .
 				'<div class="features__item">' .
 					'<span class="features__header">' .
-						__('MULTICHANNEL', 'smartsupp-live-chat', $this->plugin_slug) .
+						__('MULTICHANNEL', 'smartsupp-live-chat', 'smartsupp-live-chat') .
 					'</span>' .
-					'<img src="' . $pluginUrl . '/images/multichannel.png">' .
+					'<img src="' . $pluginUrl . '/images/multichannel-fb.png">' .
 					'<h2 class="features__item-title">' .
-						__('Respond to customers\' chats and emails from one place', $this->plugin_slug) .
+						__('Respond to customers\' chats and emails from one place', 'smartsupp-live-chat') .
 					'</h2>' .
 				'</div>' .
 				'<div class="features__item">' .
 					'<span class="features__header">' .
-						__('CHAT BOT', 'smartsupp-live-chat', $this->plugin_slug) .
+						__('CHAT BOT', 'smartsupp-live-chat', 'smartsupp-live-chat') .
 					'</span>' .
 					'<img src="' . $pluginUrl . '/images/chatbot.png">' .
 					'<h2 class="features__item-title">' .
-						__('Engage your visitors with automated chat bot', $this->plugin_slug) .
+						__('Engage your visitors with automated chat bot', 'smartsupp-live-chat') .
 					'</h2>' .
 				'</div>' .
 				'<div class="features__item">' .
 					'<span class="features__header">' .
-						__('MOBILE APP', 'smartsupp-live-chat', $this->plugin_slug) .
+						__('MOBILE APP', 'smartsupp-live-chat', 'smartsupp-live-chat') .
 					'</span>' .
 					'<img src="' . $pluginUrl . '/images/mobile.png">' .
 					'<h2 class="features__item-title">' .
-						__('Chat with customers on the go with app for iOS & Android', $this->plugin_slug) .
+						__('Chat with customers on the go with app for iOS & Android', 'smartsupp-live-chat') .
 					'</h2>' .
 				'</div>' .
 			'</div>' .
 			'<div class="features__all">' .
 				'<a href="https://smartsupp.com" target="_blank" class="btn btn--link btn--arrow">' .
-					__('Explore All Features on our website', $this->plugin_slug) .
+					__('Explore All Features on our website', 'smartsupp-live-chat') .
 				'</a>' .
 			'</div>' .
 		'</section>';
@@ -223,10 +223,10 @@ class Smartsupp_Admin
 		'<section class="clients">' .
 			'<div class="clients__container">' .
 				'<div class="clients__pretitle">' .
-					__('POPULAR CHAT SOLUTION OF EUROPEAN WEBSHOPS AND WEBSITES', $this->plugin_slug) .
+					__('POPULAR CHAT SOLUTION OF EUROPEAN WEBSHOPS AND WEBSITES', 'smartsupp-live-chat') .
 				'</div>' .
 				'<h2 class="clients__title">' .
-					__('Join the 338 445 companies and freelancers relying on Smartsupp', $this->plugin_slug) .
+					__('Join the 338 445 companies and freelancers relying on Smartsupp', 'smartsupp-live-chat') .
 				'</h2>' .
 				'<div class="clients__logos">' .
 					'<img src="' . $pluginUrl . '/images/insportline.png" alt="insportline" />' .
@@ -292,13 +292,13 @@ class Smartsupp_Admin
 	private function getMessages()
 	{
 		return array(
-			__('Email does not exist', $this->plugin_slug),
-			__('Invalid password', $this->plugin_slug),
-			__('Email is required', $this->plugin_slug),
-			__('Email already exists', $this->plugin_slug),
-			__('Password is too short. Minimal length is 6 characters.', $this->plugin_slug),
-			__('Custom code was updated.', $this->plugin_slug),
-			__('Invalid action', $this->plugin_slug),
+			__('Email does not exist', 'smartsupp-live-chat'),
+			__('Invalid password', 'smartsupp-live-chat'),
+			__('Email is required', 'smartsupp-live-chat'),
+			__('Email already exists', 'smartsupp-live-chat'),
+			__('Password is too short. Minimal length is 6 characters.', 'smartsupp-live-chat'),
+			__('Custom code was updated.', 'smartsupp-live-chat'),
+			__('Invalid action', 'smartsupp-live-chat'),
 		);
 	}
 
