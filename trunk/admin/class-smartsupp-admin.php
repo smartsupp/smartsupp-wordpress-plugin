@@ -113,7 +113,7 @@ class Smartsupp_Admin
 					'email' => $_POST['email'],
 					'password' => $_POST['password'],
 					'consentTerms' => 1,
-					'consentMarketing' => $_POST['marketing'],
+					'consentMarketing' => 1,
                     'platform' => 'WP ' . get_bloginfo('version'),
 				);
 				try {
@@ -128,7 +128,7 @@ class Smartsupp_Admin
 				} catch (Exception $e) {
 					$message = $e->getMessage();
 					$email = $_POST['email'];
-					$marketingConsent = $_POST['marketing'];
+					$marketingConsent = 1;
                     $termsConsent = 1;
 				}
 				break;
