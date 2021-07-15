@@ -13,31 +13,60 @@ Smart live chat that can rapidly boost your business Live chat suited for your W
 
 == Description ==
 
-= Boost your business with smart live chat =
-Give personalized shopping experience with advanced customer information and increase conversion rate.
- 
-Used by almost 500 000 websites, Smartsupp is currently one of the most popular chat solutions in Europe. Install our live chat and turn your visitors into happy customers.
+= Grow and expand your business with smart live chat =
+[Smartsupp](https://www.smartsupp.com/) is not just an ordinary live chat software that facilitates customer communication. Apart from many advanced features that can help you grow your business you can also use our chatbot that will automatically reach out to your customers, help them with their purchase and save you plenty of time. Install Smartsupp and convert your visitors into happy customers.
 
-= What is a smart live chat =
-Smartsupp is not just a simple live chat software for customer communication. Like a new team member, this proactive chat automatically engages your customers, helps you with your sales, and saves you plenty of time.
+* Set up chatbots to automatically send your customers fast and consistent responses. 
+* Use screen recordings to watch visitors’ behavior on your website. 
+* Respond to your customers’ messages even after they left your website.
 
-* set up chatbots to send immediate and consistent replies to your customers
-* see your visitors’ behavior on your website by watching their screen recordings
-* reply to conversations even after the visitor has left the website.
+= Main features =
+What can you expect from Smartsupp? Take a look at the list of main features that will take your customer service from average to great.
 
-= Key features =
-What can you expect from Smartsupp? Check the list of the main features that will take your customer service from average to great.
-
-* customizable chat box
-* customer satisfaction rating
-* chatbot (automatic messages)
-* mobile app (iOS & Android)
-* shortcuts (response templates)
-* detailed analytics
-* visitor session recordings
-* online support in 7 languages
+* **Chatbot** – automate, save time and sell more. While chatbot attends to your customers, you can focus on more pressing tasks. 
+* **Mobile apps** – our app for iOS and Android allows you to stay connected and reply to customers from anywhere, anytime.
+* **Multi-channel** – connect your Facebook page with Smartsupp and manage all your conversations in one place. You can reach out to your customers that have already left your website and send them email messages directly from the dashboard. 
+* **Shortcuts** – save plenty of time by using FAQ templates. All shortcuts can be displayed in a few clicks.
+* **Detailed statistics** – improve your customer communication thanks to detailed customer satisfaction data, response time statistics and chatbot performance overview.  
+* **Video recordings of visitors** – you can rewatch the recordings of your visitors and this helps you to better understand why they didn't complete their purchase or didn’t find what they were looking for. 
+* **Customer satisfaction rating** – your customers can rate the conversation in a form of a short comment and an emoji to let you know if they were satisfied with your solution 
+* **Customizable chatbox** – set up the color, size and position of the chat box to make it match your website design.
+* **Online customer support in 7 languages** – if you feel lost, our customer heroes are always happy to assist you. We provide online support in 7 languages - English, Czech, Spanish. German, Italian, Polish and French.
 
 https://youtu.be/t4tCWI2PKQs
+
+= What our users say about us? =
+Our live chat is used by almost 500 000 websites. Currently, it is one of the most popular chat solutions in Europe and we keep pushing it forward.
+
+> "Customer communication is absolutely essential for our business. The best thing about Smartsupp is that it makes our communication more effective and gives us more opportunities to make a sale. Now we are able to turn 8 out of 10 questions into a sale!"
+
+Ondřej Vrabec, Owner of venkovnihry.cz
+
+== Frequently Asked Questions ==
+
+= How can Smartsupp help me? =
+
+Smartsupp helps you to Increase sales and decrease effort while reducing the marketing costs. According to studies, chatbot can boost the number of sales by 38%. Video recordings can help you discover where your visitors get confused. The best way to find out is to [try Smartsupp for free](https://www.smartsupp.com/sign/up)!
+
+= What's the price? =
+
+After creating an account you can use the free version of Smartsupp. However, we also offer two paid packages with advanced features like statistics, video recordings or team shortcuts. Pick yourself which of our [packages](https://www.smartsupp.com/cs/pricing) would suit you best.
+
+= How to connect Smartsupp with your website? =
+
+Does your website run on WordPress? Simply install this plugin and sign in to your Smartsupp account in the plugin settings. We’ll take care of the rest. Another option is to install Smartsupp manually, you can find the tutorial [here](https://www.smartsupp.com/help/smartsupp-chat-kod/).
+
+= Can you show me how the chatbot works? =
+
+Would you like to see some examples? You can see our chatbot Smarty on our [website](https://www.smartsupp.com/chatbot). Currently, it’s available in Czech and English version only.
+
+= Do you have a mobile app? =
+
+Of course! With our mobile app you can manage your conversations and reply anywhere. It’s available for [Android](https://play.google.com/store/apps/details?id=cz.dactylgroup.smartsupp.android&hl=en&gl=US) as well as for [iOS](https://apps.apple.com/us/app/smartsupp/id1258723897) devices.
+
+= Where can I find more detailed information about specific features? =
+
+You can read more about specific features from top to bottom in the [HELP center](https://www.smartsupp.com/help/) on our website. If you cannot find what you are looking for, don’t hesitate to contact us at [support@smartsupp.com](mailto:support@smartsupp.com) and we will be happy to help you.
 
 = Language support =
 Smartsupp dashboard is available in the following languages: English, Čeština, Deutsch, Español, Français, Italiano, Magyar, Nederlands, Polski, Português (BR).
@@ -63,7 +92,8 @@ https://www.youtube.com/watch?v=REhL21Wa0lo
 1. Smartsupp dashboard
 2. Smartsupp chat widget
 3. Smartsupp chat bot garage
-4. Smartsupp mobile app
+4. Smartsupp FAQ chatbot
+5. Smartsupp mobile app
 
 == Changelog ==
 
