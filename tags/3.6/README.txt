@@ -9,7 +9,7 @@ Stable tag: 3.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Smart live chat that can rapidly boost your business Live chat suited for your WordPress website. Start a personal conversation with your visitors and turn them into happy customers.
+Smart live chat that will help you to generate more sales without spending money on ads. Activate chatbot on your website and manage all the conversations from your website and Facebook Messenger in one place.
 
 == Description ==
 
@@ -24,7 +24,7 @@ Smart live chat that can rapidly boost your business Live chat suited for your W
 What can you expect from Smartsupp? Take a look at the list of main features that will take your customer service from average to great.
 
 * **Chatbot** – automate, save time and sell more. While chatbot attends to your customers, you can focus on more pressing tasks. 
-* **Mobile apps** – our app for iOS and Android allows you to stay connected and reply to customers from anywhere, anytime.
+* **Mobile app** – our app for iOS and Android allows you to stay connected and reply to customers from anywhere, anytime.
 * **Multi-channel** – connect your Facebook page with Smartsupp and manage all your conversations in one place. You can reach out to your customers that have already left your website and send them email messages directly from the dashboard. 
 * **Shortcuts** – save plenty of time by using FAQ templates. All shortcuts can be displayed in a few clicks.
 * **Detailed statistics** – improve your customer communication thanks to detailed customer satisfaction data, response time statistics and chatbot performance overview.  
@@ -50,7 +50,7 @@ Smartsupp helps you to Increase sales and decrease effort while reducing the mar
 
 = What's the price? =
 
-After creating an account you can use the free version of Smartsupp. However, we also offer two paid packages with advanced features like statistics, video recordings or team shortcuts. Pick yourself which of our [packages](https://www.smartsupp.com/cs/pricing) would suit you best.
+After creating an account you can use the free version of Smartsupp. However, we also offer two paid packages with advanced features like statistics, video recordings or team shortcuts. Pick yourself which of our [packages](https://www.smartsupp.com/pricing) would suit you best.
 
 = How to connect Smartsupp with your website? =
 
