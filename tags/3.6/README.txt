@@ -1,4 +1,4 @@
-=== Smartsupp Live Chat ===
+=== Smartsupp – live chat, chatbots, video recordings ===
 Contributors: smartsupp, marekgach, huttenbachmedard
 Donate link:
 Tags: smartsupp, livechat, live chat, messaging, chatbot, live support, facebook, free, chat widget, lead generation, customer care, multichannel
@@ -9,38 +9,39 @@ Stable tag: 3.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Smart live chat that will help you to generate more sales without spending money on ads. Activate chatbot on your website and manage all the conversations from your website and Facebook Messenger in one place.
+Smartsupp combines live chat, chatbots and Facebook Messenger to save your time and help you turn visitors into loyal customers.
 
 == Description ==
 
 = Grow and expand your business with smart live chat =
-[Smartsupp](https://www.smartsupp.com/) is not just an ordinary live chat software that facilitates customer communication. Apart from many advanced features that can help you grow your business you can also use our chatbot that will automatically reach out to your customers, help them with their purchase and save you plenty of time. Install Smartsupp and convert your visitors into happy customers.
+[Smartsupp](https://www.smartsupp.com/) is your personal shopping assistant. It combines live chat and chatbots to save your time and help you turn visitors into loyal customers. Smartsupp is one of the most popular products in Europe with 50 000 active European webshops and websites.
 
-* Set up chatbots to automatically send your customers fast and consistent responses. 
-* Use screen recordings to watch visitors’ behavior on your website. 
-* Respond to your customers’ messages even after they left your website.
+= Why choose Smartsupp? =
+* **The only product that combines live chat, chatbots and video recordings.** Automate repetitive questions, be personal where it's relevant and see where visitors get lost on your webshop.
+* **Access real-time visitor list enriched with e-commerce data.** See who is browsing your webshop, which products are they interested in and proactively start a conversation to make a sale.
+* **The most popular online chat in Europe** with more than 50 000 active webshops and websites. We also offer human customer service in 7 different languages.
+* **GDPR compliant.** We securely store your data in the European Union and comply with strict EU data protection laws.
 
-= Main features =
+= What can Smartsupp do? =
 What can you expect from Smartsupp? Take a look at the list of main features that will take your customer service from average to great.
 
-* **Chatbot** – automate, save time and sell more. While chatbot attends to your customers, you can focus on more pressing tasks. 
-* **Mobile app** – our app for iOS and Android allows you to stay connected and reply to customers from anywhere, anytime.
-* **Multi-channel** – connect your Facebook page with Smartsupp and manage all your conversations in one place. You can reach out to your customers that have already left your website and send them email messages directly from the dashboard. 
-* **Shortcuts** – save plenty of time by using FAQ templates. All shortcuts can be displayed in a few clicks.
-* **Detailed statistics** – improve your customer communication thanks to detailed customer satisfaction data, response time statistics and chatbot performance overview.  
-* **Video recordings of visitors** – you can rewatch the recordings of your visitors and this helps you to better understand why they didn't complete their purchase or didn’t find what they were looking for. 
-* **Customer satisfaction rating** – your customers can rate the conversation in a form of a short comment and an emoji to let you know if they were satisfied with your solution 
-* **Customizable chatbox** – set up the color, size and position of the chat box to make it match your website design.
-* **Online customer support in 7 languages** – if you feel lost, our customer heroes are always happy to assist you. We provide online support in 7 languages - English, Czech, Spanish. German, Italian, Polish and French.
+* **Live chat, emails and Messenger in one place** – start a personal conversation with your customers and have all communication in one place. By helping your visitors instantly, you’ll turn them into happy customers and boost your sales.
+* **Chatbot** – Smartsupp bot is your new shopping assistant that works 24/7. It’ll save your time by answering frequently asked questions, collecting leads and assisting customers with shopping even while you're asleep.
+* **Video recordings** – see how your visitors are browsing your webshop or website and where they are getting lost. You’ll get valuable insights on what to improve and ensure a smooth shopping experience for your customers.
+* **Mobile app** – be closer to your customers with our app for iOS and Android phones and answer questions even when you are in the warehouse or on the go.
+* Visit our website to get [the full list of features](https://www.smartsupp.com/pricing).
 
 https://youtu.be/t4tCWI2PKQs
 
 = What our users say about us? =
-Our live chat is used by almost 500 000 websites. Currently, it is one of the most popular chat solutions in Europe and we keep pushing it forward.
 
-> "Customer communication is absolutely essential for our business. The best thing about Smartsupp is that it makes our communication more effective and gives us more opportunities to make a sale. Now we are able to turn 8 out of 10 questions into a sale!"
+> "Smartsupp helps us to make our online shop even more successful! After a simple installation, we immediately had the first customer with a question, who then ordered straight away."
 
-Ondřej Vrabec, Owner of venkovnihry.cz
+—Oke Harms, Kickerkult.de
+
+> "With Smartsupp we use one chat in several shops! Thanks to them, we have been able to improve our contact with customers. Communication is instant and convenient for both us and the customers."
+
+—Katarzyna, Wujo.pl
 
 == Frequently Asked Questions ==
 
