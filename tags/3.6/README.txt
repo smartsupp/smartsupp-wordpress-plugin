@@ -1,15 +1,15 @@
 === Smartsupp – live chat, chatbots, video recordings ===
-Contributors: smartsupp, marekgach, huttenbachmedard
+Contributors: smartsupp, marekgach, huttenbachmedard, jansvabik
 Donate link:
 Tags: smartsupp, livechat, live chat, messaging, chatbot, live support, facebook, free, chat widget, lead generation, customer care, multichannel
 Requires at least: 3.0
-Tested up to: 5.7
+Tested up to: 5.8
 Requires PHP: 5.3.2
 Stable tag: 3.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Smartsupp combines live chat & chatbots to save your time and help you turn visitors into customers.
+Our live chat and chatbots will save your time and help you turn visitors into customers.
 
 == Description ==
 
