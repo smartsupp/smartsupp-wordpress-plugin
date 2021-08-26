@@ -9,7 +9,7 @@ Stable tag: 3.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Smartsupp combines live chat, chatbots and Facebook Messenger to save your time and help you turn visitors into loyal customers.
+Smartsupp combines live chat & chatbots to save your time and help you turn visitors into customers.
 
 == Description ==
 
