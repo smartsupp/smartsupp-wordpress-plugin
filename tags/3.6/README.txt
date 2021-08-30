@@ -13,7 +13,7 @@ Our live chat and chatbots will save your time and help you turn visitors into c
 
 == Description ==
 
-= Grow and expand your business with smart live chat =
+= Same traffic, more sales =
 [Smartsupp](https://www.smartsupp.com/) is your personal shopping assistant. It combines live chat and chatbots to save your time and help you turn visitors into loyal customers. Smartsupp is one of the most popular products in Europe with 50 000 active European webshops and websites.
 
 = Why choose Smartsupp? =
