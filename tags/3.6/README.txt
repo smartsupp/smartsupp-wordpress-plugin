@@ -25,8 +25,8 @@ Our live chat and chatbots will save your time and help you turn visitors into c
 = What can Smartsupp do? =
 What can you expect from Smartsupp? Take a look at the list of main features that will take your customer service from average to great.
 
-* **Live chat, emails and Messenger in one place** – start a personal conversation with your customers and have all communication in one place. By helping your visitors instantly, you’ll turn them into happy customers and boost your sales.
-* **Chatbot** – Smartsupp bot is your new shopping assistant that works 24/7. It’ll save your time by answering frequently asked questions, collecting leads and assisting customers with shopping even while you're asleep.
+* **[Live chat](https://www.smartsupp.com/live-chat), emails and Messenger in one place** – start a personal conversation with your customers and have all communication in one place. By helping your visitors instantly, you’ll turn them into happy customers and boost your sales.
+* **[Chatbot](https://www.smartsupp.com/chatbot)** – Smartsupp bot is your new shopping assistant that works 24/7. It’ll save your time by answering frequently asked questions, collecting leads and assisting customers with shopping even while you're asleep.
 * **Video recordings** – see how your visitors are browsing your webshop or website and where they are getting lost. You’ll get valuable insights on what to improve and ensure a smooth shopping experience for your customers.
 * **Mobile app** – be closer to your customers with our app for iOS and Android phones and answer questions even when you are in the warehouse or on the go.
 * Visit our website to get [the full list of features](https://www.smartsupp.com/pricing).
