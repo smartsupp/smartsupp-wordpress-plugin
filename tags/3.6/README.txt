@@ -3,7 +3,7 @@ Contributors: smartsupp, marekgach, huttenbachmedard, jansvabik
 Donate link:
 Tags: smartsupp, livechat, live chat, messaging, chatbot, live support, facebook, free, chat widget, lead generation, customer care, multichannel
 Requires at least: 3.0
-Tested up to: 5.8
+Tested up to: 5.9
 Requires PHP: 5.3.2
 Stable tag: 3.6
 License: GPLv2 or later
