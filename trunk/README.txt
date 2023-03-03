@@ -60,10 +60,11 @@ https://www.youtube.com/watch?v=REhL21Wa0lo
 
 == Screenshots ==
 
-1. Smartsupp dashboard
-2. Smartsupp chat widget
-3. Smartsupp chat bot garage
-4. Smartsupp mobile app
+1. Smartsupp live chat
+2. Smartsupp widget
+3. Smartsupp multichannel communication
+4. Smartsupp chatbot
+5. Smartsupp mobile app
 
 == Changelog ==
 
