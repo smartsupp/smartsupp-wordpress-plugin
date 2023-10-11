@@ -9,8 +9,6 @@ Stable tag: 3.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Our live chat and chatbots will save your time and help you turn visitors into customers.
-
 == Elevate Your Online Sales with Conversations! ==
 
 We offer everything you need to grow your online sales: AI, LeadGen chatbots, live chat, and much more you can use to engage your visitors at the right time. And convert them into loyal customers in no time. Smartsupp is one of the leading and most trusted chat and chatbot solutions in the world, currently boosting over 100,000 webshops and websites.
