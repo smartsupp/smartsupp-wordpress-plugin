@@ -1,4 +1,4 @@
-=== Smartsupp – live chat, chatbots, video recordings ===
+=== Smartsupp – live chat, chatbots, AI and lead generation ===
 Contributors: smartsupp, marekgach, huttenbachmedard, jansvabik
 Donate link:
 Tags: smartsupp, livechat, live chat, messaging, chatbot, live support, facebook, free, chat widget, lead generation, customer care, multichannel
