@@ -24,7 +24,7 @@ We offer everything you need to grow your online sales: AI, LeadGen chatbots, li
 
 🔐GDPR compliant: We securely store your data in the European Union and comply with strict EU data protection laws.
 
-= What can Smartsupp do? =
+== What can Smartsupp do? ==
 What awaits you with Smartsupp? Explore our list of key features that will elevate your customer service from ordinary to exceptional.
 
 **Live Chat**: Connect with your e-shop customers in real-time, just like having a friendly conversation.
@@ -43,7 +43,7 @@ What awaits you with Smartsupp? Explore our list of key features that will eleva
 
 Ready to take your online presence to new heights? Experience the difference with Smartsupp today and witness firsthand what we can do for your business!
 
-= What our users say about us? =
+== What our users say about us? ==
 
 > "Smartsupp helps us to make our online shop even more successful! After a simple installation, we immediately had the first customer with a question, who then ordered straight away."
 
