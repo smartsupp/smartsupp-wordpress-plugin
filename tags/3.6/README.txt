@@ -13,7 +13,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 We offer everything you need to grow your online sales: AI, LeadGen chatbots, live chat, and much more you can use to engage your visitors at the right time. And convert them into loyal customers in no time. Smartsupp is one of the leading and most trusted chat and chatbot solutions in the world, currently boosting over 100,000 webshops and websites.
 
-= Why choose Smartsupp? =
+== Why choose Smartsupp? ==
 🗨️ **Chat and Connect**: Engage effortlessly with your customers and establish robust relationships. Our lightning-fast chatbox is complemented by Messenger and email integration, ensuring every conversation is at your fingertips via our mobile apps.
 
 🚀 **Convert and Conquer**: Transform mere visitors into enthusiastic customers thanks to lead-gen chatbots and automated messaging.
