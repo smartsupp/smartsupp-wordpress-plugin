@@ -22,7 +22,7 @@ We offer everything you need to grow your online sales: AI, LeadGen chatbots, li
 
 📊 **Unlock Insights**: Gain a deeper understanding of conversation dynamics, customer satisfaction, your team's performance, popular inquiries, and more. Uncover who's converting effortlessly and who may need your special attention.
 
-🔐GDPR compliant: We securely store your data in the European Union and comply with strict EU data protection laws.
+🔐 **GDPR compliant**: We securely store your data in the European Union and comply with strict EU data protection laws.
 
 == What can Smartsupp do? ==
 What awaits you with Smartsupp? Explore our list of key features that will elevate your customer service from ordinary to exceptional.
