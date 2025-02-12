@@ -9,7 +9,7 @@ Stable tag: 3.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-We provide the tools to grow your business: Mira AI, Live Chat, Chatbot, AI tools and more to engage visitors at the right time.
+Boost your sales and turn visitors into customers with live chat, AI tools and chatbots. Smartsupp is trusted by 100,000+ online stores.
 
 == Elevate Your Online Sales with Conversations! ==
 
