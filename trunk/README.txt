@@ -1,7 +1,7 @@
 === Smartsupp – live chat, AI shopping assistant and chatbots ===
 Contributors: smartsupp, marekgach, huttenbachmedard, jansvabik
 Donate link:
-Tags: smartsupp, livechat, live chat, chatbot, AI, Mira AI, automation, online, messaging, platform, support
+Tags: Smartsupp, Livechat, Online chat, Chatbot, AI
 Requires at least: 3.0
 Tested up to: 6.6.1
 Requires PHP: 5.3.2
@@ -47,15 +47,15 @@ Ready to take your online presence to new heights? Experience the difference wit
 
 == What our users say about us? ==
 
-> "Smartsupp helps us to make our online shop even more successful! After a simple installation, we immediately had the first customer with a question, who then ordered straight away."
+"Smartsupp helps us to make our online shop even more successful! After a simple installation, we immediately had the first customer with a question, who then ordered straight away."
 
 —Oke Harms, Kickerkult.de
 
-> "One of the advantages of Smartsupp chat for us is that it is always visible at a glance when browsing the e-shop. Our customers know that we are there for them 24/7, and they can contact us at any time – whether they use the chatbot or the live chat."
+"One of the advantages of Smartsupp chat for us is that it is always visible at a glance when browsing the e-shop. Our customers know that we are there for them 24/7, and they can contact us at any time – whether they use the chatbot or the live chat."
 
 —Jan Kučera, ASKO - NÁBYTEK
 
-> "We have 23 live chat agents available from 6 a.m. to midnight. Most frequently, customers text in the evening, though. Thanks to Smartsupp's solutions, we sell 900 cars a month."
+"We have 23 live chat agents available from 6 a.m. to midnight. Most frequently, customers text in the evening, though. Thanks to Smartsupp's solutions, we sell 900 cars a month."
 
 —Jan Duchoň, AAA AUTO
 
