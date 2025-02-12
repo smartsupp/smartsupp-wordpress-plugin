@@ -1,7 +1,7 @@
 === Smartsupp – live chat, AI shopping assistant and chatbots ===
 Contributors: smartsupp, marekgach, huttenbachmedard, jansvabik
 Donate link:
-Tags: smartsupp, livechat, live chat, chatbot, AI, Mira AI, automation, online, messaging, platform, support
+Tags: Smartsupp, Livechat, Online chat, Chatbot, AI
 Requires at least: 3.0
 Tested up to: 6.6.1
 Requires PHP: 5.3.2
