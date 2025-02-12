@@ -8,6 +8,7 @@ Requires PHP: 5.3.2
 Stable tag: 3.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
 We provide the tools to grow your business: Mira AI, Live Chat, Chatbot, AI tools and more to engage visitors at the right time.
 
 == Elevate Your Online Sales with Conversations! ==
