@@ -1,73 +1,109 @@
-=== Smartsupp Live Chat ===
-Contributors: smartsupp, marekgach
+=== Smartsupp – live chat, AI shopping assistant and chatbots ===
+Contributors: smartsupp, marekgach, huttenbachmedard, jansvabik
 Donate link:
-Tags: Smartsupp, chat, live chat, online chat, messaging, B2B SaaS, support chat, web chat, free live chat, chat for web, chat online, chat software, free chat, jivochat, jivosite, live chat, live chat inc, live support, live web chat, livechat, olark, online chat, online support, snapengage, wordpress chat, wordpress live chat, Zopim, Tawk.to, Tidio, Tidio chat, Crisp, Crisp chat, Drift, Smartsupp, Smartsup, Smartsapp, Boldchat, Live person, pure chat, chatra, userlike, liveagent, helpcrunch
+Tags: smartsupp, livechat, live chat, chatbot, AI
 Requires at least: 3.0
-Tested up to: 6.2
-Requires PHP: 5.3
-Stable tag: 3.5
+Tested up to: 6.6.1
+Requires PHP: 5.3.2
+Stable tag: 3.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Live chat suited for your WordPress website. Start a personal conversation with your visitors and turn them into happy customers.
+We provide the tools to grow your business: Mira AI, Live Chat, Chatbot, AI tools and more to engage visitors at the right time.
 
-== Description ==
+== Elevate Your Online Sales with Conversations! ==
 
-Smartsupp live chat enables you to start a personal conversation with your visitors and turn them into happy customers. Choose one of the most popular chat solutions in Europe, used by 283 000 websites.
+We offer everything you need to grow your online sales: chatbots, AI shopping assistant, live chat, and much more you can use to engage your visitors at the right time. And convert them into loyal customers in no time. Smartsupp is one of the leading and most trusted chat and chatbot solutions in the world, currently boosting over 100,000 webshops and websites.
 
-See detailed visitor info in powerful web dashboard. Chat with customers on the go in our mobile apps for both iOS and Android. Engage visitors using automatic messages. Measure your customer care quality with detailed statistics. Get a better understanding of customer behavior thanks to visitor recording.
+== Why choose Smartsupp? ==
+🗨️ **Chat and Connect:** Engage effortlessly with your customers and establish robust relationships. Our lightning-fast chatbox is complemented by Messenger, WhatsApp and email integration, ensuring every conversation is at your fingertips via our mobile apps.
 
-Your customers are browsing your website right now. **Create a free account** and start chatting with them today.
+🚀 **Convert and Conquer:** Transform mere visitors into enthusiastic customers thanks to lead-gen chatbots, Mira AI shopping assistant and automated messaging.
 
-**Key features**
+🤖 **Engage with AI:** Keep both customers and visitors engaged with our Mira AI shopping assistant available 24/7 to provide invaluable assistance.
 
-* Customizable chat box
-* Customer satisfaction rating
-* Automatic messages
-* Mobile apps
-* Shortcuts (canned responses)
-* Detailed statistics
-* Easy integration with WordPress
-* Visitor recording (session replay)
-* Online support in 7 languages
-* Detailed customer info integration with WooCommerce
+📊 **Unlock Insights:** Gain a deeper understanding of conversation dynamics, customer satisfaction, your team's performance, popular inquiries, and more. Uncover who's converting effortlessly and who may need your special attention.
 
-**Pricing**
+🔐 **GDPR compliant:** We securely store your data in the European Union and comply with strict EU data protection laws.
 
-* Free package : free forever for 3 agents
-* Premium packages starting at 10 EUR / month / agent
+== What can Smartsupp do? ==
+**What awaits you with Smartsupp?** Explore our list of key features that will elevate your customer service from ordinary to exceptional.
 
-Find more details about Smartsupp and our pricing on [www.smartsupp.com](https://www.smartsupp.com).
+**Live Chat:** Connect with your e-shop customers in real-time, just like having a friendly conversation.
 
-**Smartsupp is available in following languages**
+**Mira AI Shopping Assistant:** Take advantage of our advanced AI chatbot to automatically answer up to 80% of customer queries, recommend products, and drive cross-sell and up-sell opportunities.
 
-* English
-* Čeština
-* Deutsch
-* Español
-* Français
-* Italiano
-* Magyar
-* Nederlands
-* Polski
-* Português (BR)
+**Chatbot:** Your personalized, time-saving assistant. It engages with your visitors, answers their questions, guides them to the right products, and even chats when you're not around.
 
-If you need help please feel free to contact us at support@smartsupp.com.
+**Lead Generation:** Automatically gather leads through the chatbot and categorize them based on your needs.
+
+**Messenger, WhatsApp & Email Integration:** Bring all customer inquiries from various platforms into a single, user-friendly dashboard.
+
+**E-shop Data:** Access detailed customer information right during your chat, thanks to our advanced integration with WordPress.
+
+**Mobile App:** Stay connected with your customers anytime, anywhere – it's like having your e-shop in your pocket!
+
+Ready to take your online presence to new heights? Experience the difference with Smartsupp today and witness firsthand what we can do for your business!
+
+== What our users say about us? ==
+
+> "Smartsupp helps us to make our online shop even more successful! After a simple installation, we immediately had the first customer with a question, who then ordered straight away."
+
+—Oke Harms, Kickerkult.de
+
+> "One of the advantages of Smartsupp chat for us is that it is always visible at a glance when browsing the e-shop. Our customers know that we are there for them 24/7, and they can contact us at any time – whether they use the chatbot or the live chat."
+
+—Jan Kučera, ASKO - NÁBYTEK
+
+> "We have 23 live chat agents available from 6 a.m. to midnight. Most frequently, customers text in the evening, though. Thanks to Smartsupp's solutions, we sell 900 cars a month."
+
+—Jan Duchoň, AAA AUTO
+
+[youtube https://www.youtube.com/watch?v=6TBNMANmVrA]
+
+== FAQ ==
+
+= How can Smartsupp benefit my online business? =
+
+Smartsupp boosts online sales via impactful conversations. With Mira AI shopping assistant, lead generating chatbots, and live chat, we turn visitors into customers. Used by over 100,000 webshops, our tools integrate with Messenger and email, streamline lead campaigns, and provide AI-assisted customer interactions. [Explore Smartsupp for free](https://www.smartsupp.com/sign/up) to see the difference\!
+
+= What's the cost of Smartsupp? =
+
+Once you’ve set up an account, Smartsupp offers a free version of live chat, along with a trial period to explore our new Mira AI shopping assistant. After testing it out, it’s entirely up to you whether you upgrade to a paid plan. Our premium plans not only include advanced AI features but also provide detailed statistics to help you track customer satisfaction and agent performance. [Choose the plan](https://www.smartsupp.com/pricing) that fits your needs best\!
+
+= How can you integrate Smartsupp with your website? =
+
+If your website utilizes WordPress, integration is straightforward. Simply install our designated plugin and log into your Smartsupp account within the plugin settings. The integration will be handled automatically from there. The second option is a manual installation, please refer to our [step-by-step tutorial](https://help.smartsupp.com/en_US/installation-plugins/wordpress).
+
+= How to integrate the Mira AI shopping assistant into your website? =
+
+You don’t need any technical skills or coding knowledge to set up your own AI shopping assistant. [Mira AI](https://www.smartsupp.com/mira-ai-shopping-assistant/) is a simple plug-and-play solution designed for effortless integration. The best part? Getting it up and running takes less than 5 minutes. Mira AI gathers information either by scraping your website URL or using your product feed, allowing her to learn about your products and offer personalized shopping guidance and recommendations.
+
+= Can you show me how the chatbot works? =
+
+Certainly\! For a live example, visit our [website](https://www.smartsupp.com/) and interact with our chatbot. Additionally, for an in-depth understanding, we have a detailed tutorial available in our [Help section.](https://help.smartsupp.com/en_US/chatbots-automation)
+
+= Do you have a mobile app? =
+
+Yes, we offer a mobile app to facilitate seamless conversation management on-the-go. It's compatible with both [Android](https://play.google.com/store/apps/details?id=cz.dactylgroup.smartsupp.android&hl=en&gl=US) and [iOS](https://apps.apple.com/us/app/smartsupp/id1258723897) devices.
+
+= Where can I find more detailed information about specific features? =
+
+For better insights into our features, visit the [HELP center](https://help.smartsupp.com/en_US/) on our website. If you have further queries or can't locate specific information, please reach out to us at support@smartsupp.com. We're always eager to assist.
+
+= Which languages does the Smartsupp dashboard support? =
+
+The Smartsupp dashboard is multilingual, offering support for: English, Čeština, Deutsch, Español, Français, Italiano, Magyar, Nederlands, and Polski.
 
 == Installation ==
 
-= Requires: =
+= Requires =
 WordPress 3.0 or higher, PHP at least 5.3.2
 
-= Instalation steps =
-1. Install Smartsupp plugin in WordPress and activate it.
-2. Login to Smartsupp or create new account in plugin settings.
-3. Now Smartsupp chat is visible on your website. Sign in to Smartsupp dashboard and start chatting with your visitors.
-
-= Installation tutorial with screenshots: =
-https://www.smartsupp.com/help/wordpress/
-
-== Frequently Asked Questions ==
+= Installation instructions =
+1. Begin by installing the Smartsupp plugin in your WordPress dashboard and ensure it is activated.
+2. Log in to your Smartsupp account or create a new one through the plugin settings.
+3. Voilà! Your Smartsupp chat is now visible on your website. Sign in to the Smartsupp dashboard, and you can start engaging in real-time conversations with your website visitors.
 
 == Screenshots ==
 
@@ -78,6 +114,14 @@ https://www.smartsupp.com/help/wordpress/
 5. Smartsupp mobile app
 
 == Changelog ==
+
+= 3.7 =
+* Fix possible CSRF security issue
+
+= 3.6 =
+* Fix translation strings
+* Give us review notification
+* No mkt consent
 
 = 3.5 =
 * New graphic design
