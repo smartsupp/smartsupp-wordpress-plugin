@@ -107,11 +107,11 @@ WordPress 3.0 or higher, PHP at least 5.3.2
 
 == Screenshots ==
 
-1. Smartsupp live chat
-2. Smartsupp widget
-3. Smartsupp multichannel communication
-4. Smartsupp chatbot
-5. Smartsupp mobile app
+1. Stay always close to your e-shop customers.
+2. Automate up to 80% of inquiries with Mira AI Shopping Assistant.
+3. Collect leads with a chatbot and boost your e-shop sales
+4. Manage multichannel live chat conversations on one dashboard.
+5. Manage conversations on-the-go with the Smartsupp mobile app.
 
 == Changelog ==
 
