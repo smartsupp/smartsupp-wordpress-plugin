@@ -1,4 +1,5 @@
-=== Smartsupp – live chat, chatbots, AI and lead generation ===
+=== Smartsupp – live chat, AI shopping assistant and chatbots ===
+Short description: We provide the tools to grow your business: Mira AI, Live Chat, Chatbot, AI tools and more to engage visitors at the right time.
 Contributors: smartsupp, marekgach, huttenbachmedard, jansvabik
 Donate link:
 Tags: smartsupp, livechat, live chat, chatbot, AI
