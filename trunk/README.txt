@@ -116,7 +116,7 @@ WordPress 3.0 or higher, PHP at least 5.3.2
 == Changelog ==
 
 = 3.7 =
-* Fix possible CSRF security issue
+* Fix a possible CSRF security issue
 
 = 3.6 =
 * Fix translation strings
