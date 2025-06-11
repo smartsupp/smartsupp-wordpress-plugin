@@ -22,6 +22,12 @@ class Smartsupp_Admin
 	 */
 	protected static $instance = NULL;
 
+	/**
+	 * The plugin slug.
+	 *
+	 * @var string
+	 */
+	private $plugin_slug;
 
 	private function __construct()
 	{
