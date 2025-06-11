@@ -11,16 +11,21 @@ class ComposerStaticInitfedd9659bdc20af60d9dce6524badb41
         array (
             'Smartsupp' => 
             array (
-                0 => __DIR__ . '/..' . '/smartsupp/chat-code-generator/src',
-                1 => __DIR__ . '/..' . '/smartsupp/php-partner-client/src',
+                0 => __DIR__ . '/..' . '/smartsupp/php-partner-client/src',
+                1 => __DIR__ . '/..' . '/smartsupp/chat-code-generator/src',
             ),
         ),
+    );
+
+    public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixesPsr0 = ComposerStaticInitfedd9659bdc20af60d9dce6524badb41::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitfedd9659bdc20af60d9dce6524badb41::$classMap;
 
         }, null, ClassLoader::class);
     }
