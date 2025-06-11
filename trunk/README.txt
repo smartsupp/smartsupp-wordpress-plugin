@@ -3,9 +3,9 @@ Contributors: smartsupp, marekgach, huttenbachmedard, jansvabik
 Donate link:
 Tags: Smartsupp, Livechat, Online chat, Chatbot, AI
 Requires at least: 3.0
-Tested up to: 6.6.1
+Tested up to: 6.8.1
 Requires PHP: 5.3.2
-Stable tag: 3.7
+Stable tag: 3.7.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -114,6 +114,9 @@ WordPress 3.0 or higher, PHP at least 5.3.2
 5. Manage conversations on-the-go with the Smartsupp mobile app.
 
 == Changelog ==
+
+= 3.7.1 =
+* Updated the plugin for compatibility with Wordpress 6.8.1 and PHP 8.2.28
 
 = 3.7 =
 * Fix a possible CSRF security issue
