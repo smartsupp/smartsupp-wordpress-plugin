@@ -115,6 +115,9 @@ WordPress 3.0 or higher, PHP at least 5.3.2
 
 == Changelog ==
 
+= 3.8 =
+* Fix QIT tests (mainly security tests)
+
 = 3.7 =
 * Fix a possible CSRF security issue
 

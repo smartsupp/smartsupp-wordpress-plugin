@@ -15,4 +15,4 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 	exit;
 }
 
-delete_option('smartsupp');
+delete_option( 'smartsupp' );
