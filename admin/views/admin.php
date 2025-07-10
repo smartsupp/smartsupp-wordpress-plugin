@@ -191,9 +191,9 @@ echo '<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppi
 									printf(
 										/* translators: %1$s, %2$s, %3$s, %4$s are opening and closing anchor tags */
 										esc_html__( 'By signing up, you agree with %1$sTerms%2$s and %3$sDPA%4$s', 'smartsupp-live-chat' ),
-										'<a href="https://www.smartsupp.com/terms" target="_blank">',
+										'<a href="https://help.smartsupp.com/en_US/privacy-legal/terms" target="_blank">',
 										'</a>',
-										'<a href="https://www.smartsupp.com/dpa" target="_blank">',
+										'<a href="https://help.smartsupp.com/en_US/privacy-legal/dpa" target="_blank">',
 										'</a>'
 									);
 									?>

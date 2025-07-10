@@ -9,7 +9,7 @@
  *
  * Plugin Name:       Smartsupp Live Chat
  * Plugin URI:        http://www.smartsupp.com
- * Description:       Smartsupp live chat - official plugin. Smartsupp is free live chat with visitor recording. The plugin enables you to create a free account or sign in with existing one. Pre-integrated customer info with WooCommerce (you will see names and emails of signed in webshop visitors). Optional API for advanced chat box modifications.
+ * Description:       Smartsupp live chat, chatbots and AI is a powerful customer engagement solution that helps you be closer with your customers and sell more. The plugin will enable the chat widget on your website for live chat and chatbots. With Smartsupp you can also can use Email and Whatsapp channels in communicating with your customers. Optional API for advanced chat box modifications.
  * Version:           3.7
  * Author:            Smartsupp
  * Author URI:        http://www.smartsupp.com
