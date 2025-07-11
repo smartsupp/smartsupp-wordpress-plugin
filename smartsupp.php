@@ -9,8 +9,8 @@
  *
  * Plugin Name:       Smartsupp Live Chat
  * Plugin URI:        http://www.smartsupp.com
- * Description:       Smartsupp live chat - official plugin. Smartsupp is free live chat with visitor recording. The plugin enables you to create a free account or sign in with existing one. Pre-integrated customer info with WooCommerce (you will see names and emails of signed in webshop visitors). Optional API for advanced chat box modifications.
- * Version:           3.7
+ * Description:       Smartsupp live chat, chatbots and AI is a powerful customer engagement solution that helps you be closer with your customers and sell more. The plugin will enable the chat widget on your website for live chat and chatbots. With Smartsupp you can also can use Email and Whatsapp channels in communicating with your customers. Optional API for advanced chat box modifications.
+ * Version:           3.8
  * Author:            Smartsupp
  * Author URI:        http://www.smartsupp.com
  * Text Domain:       smartsupp-live-chat
@@ -24,23 +24,25 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-/*----------------------------------------------------------------------------*
+/*
+----------------------------------------------------------------------------*
  * Public-Facing Functionality
  *----------------------------------------------------------------------------*/
 
-require_once( plugin_dir_path( __FILE__ ) . 'public/class-smartsupp.php' );
+require_once plugin_dir_path( __FILE__ ) . 'public/class-smartsupp.php';
 
 
 
 add_action( 'plugins_loaded', array( 'Smartsupp', 'get_instance' ) );
 
-/*----------------------------------------------------------------------------*
+/*
+----------------------------------------------------------------------------*
  * Dashboard and Administrative Functionality
  *----------------------------------------------------------------------------*/
 
 if ( is_admin() && ( ! defined( 'DOING_AJAX' ) || ! DOING_AJAX ) ) {
 
-	require_once( plugin_dir_path( __FILE__ ) . 'admin/class-smartsupp-admin.php' );
+	require_once plugin_dir_path( __FILE__ ) . 'admin/class-smartsupp-admin.php';
 	add_action( 'plugins_loaded', array( 'Smartsupp_Admin', 'get_instance' ) );
 	register_activation_hook( __FILE__, array( 'Smartsupp_Admin', 'install' ) );
 }
