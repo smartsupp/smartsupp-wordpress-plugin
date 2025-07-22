@@ -22,6 +22,11 @@ class Smartsupp_Admin {
 	 */
 	protected static $instance = null;
 
+    /**
+     * @var string
+     */
+    protected $plugin_slug = '';
+
 
 	private function __construct() {
 		$plugin            = Smartsupp::get_instance();
