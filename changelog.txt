@@ -1,0 +1,72 @@
+*** Smartsupp – live chat, AI shopping assistant and chatbots Changelog ***
+
+2025-06-23 - version 3.8.1
+* Fixed - Remove deprecated plugin_url property creation
+
+2025-06-15 - version 3.8
+* Fixed - QIT tests (mainly security tests)
+
+2023-06-15 - version 3.7
+* Fixed - Fixed a possible CSRF security issue
+
+2024-04-24 - version 3.6
+* Fixed - Translation strings
+* Added - Give us review notification
+* Changed - No marketing consent
+
+2020-12-18 - version 3.5
+* Added - New graphic design
+* Update - UI improvements
+
+2020-12-18 - version 3.4
+* Changed - Changes in readme
+* Update - Improved country and language tracking during registration
+* Dev - Composer update
+
+2019-06-30 - version 3.3
+* Changed - Changes to create Smartsupp account process
+
+2018-04-13 - version 3.2
+* Fixed - Fixed bug when SCRIPT tags are inserted into optional code text area
+* Tweak - Some minor text changes
+
+2017-10-12 - version 3.1
+* Fixed - Fixed bug on some installations with WooCommerce
+* Fixed - Fixed bug with custom templates not showing styles
+
+2016-11-14 - version 3.0
+* Update - Refactored plugin design
+
+2016-01-22 - version 2.8
+* Fixed - Fixed some PHP warnings
+
+2016-01-22 - version 2.7
+* Developer - Updated dependencies
+* Fixed - Fixed problem with some non-ASCII letters used in strings
+
+2015-11-05 - version 2.6
+* Added - PHP version check. At least PHP 5.3 is required during plugin activation
+* Added - WordPress version check for at least version 3.1
+* Fixed - Removed some PHP warnings
+
+2015-10-12 - version 2.5
+* Changed - Settings page changes
+
+2015-10-08 - version 2.4
+* Fixed - Version fix
+
+2015-10-08 - version 2.3
+* Fixed - Some default parameters are not set
+* Added - Possibility to enter custom parameters for chat
+
+2015-10-08 - version 2.2
+* Changed - Some language changes
+
+2015-10-08 - version 2.1
+* Fixed - Fixed error in rendering
+
+2015-10-08 - version 2.0
+* Update - Plugin is using now smartsupp/chat-code-generator (https://github.com/smartsupp/chat-code-generator)
+
+2015-10-08 - version 0.1
+* Initial release
