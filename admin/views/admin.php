@@ -2,10 +2,8 @@
 
 $pluginUrl = plugins_url( '', dirname( __DIR__ ) );
 
-echo '<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700">' .
-	'<link rel="stylesheet" property="stylesheet" type="text/css" href="' . esc_url( $pluginUrl ) . '/assets/style.css" />';
-
-?><div class="wrap" id="content">
+?>
+<div class="wrap" id="content">
 	<?php if ( $options['active'] ) { ?>
 		<div class="alert alert-warning gift">
 			<img src="<?php echo esc_url( $pluginUrl ); ?>/images/gift.svg" alt="Gift icon">

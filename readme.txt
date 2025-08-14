@@ -3,7 +3,7 @@ Contributors: smartsupp, marekgach, huttenbachmedard, jansvabik
 Donate link:
 Tags: Smartsupp, Livechat, Online chat, Chatbot, AI
 Requires at least: 3.0
-Tested up to: 6.6.1
+Tested up to: 6.8.2
 Requires PHP: 5.3.2
 Stable tag: 3.8.2
 License: GPLv2 or later
@@ -114,6 +114,9 @@ WordPress 3.0 or higher, PHP at least 5.3.2
 5. Manage conversations on-the-go with the Smartsupp mobile app.
 
 == Changelog ==
+
+= 3.8.3 =
+* Fix: Enqueue styles
 
 = 3.8.2 =
 * Fix: Deprecated: mb_strlen() error

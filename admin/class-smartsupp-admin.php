@@ -34,6 +34,7 @@ class Smartsupp_Admin {
 
 		add_action( 'admin_menu', array( $this, 'addMenuItems' ) );
 		add_action( 'admin_init', array( $this, 'performAction' ) );
+		add_action( 'admin_enqueue_scripts', array( $this, 'enqueueAssets' ) );
 
 		$plugin_basename = plugin_basename( plugin_dir_path( realpath( __DIR__ ) ) . $this->plugin_slug . '.php' );
 		add_filter(
@@ -321,5 +322,14 @@ class Smartsupp_Admin {
 			__( 'Custom code was updated.', 'smartsupp-live-chat' ),
 			__( 'Invalid action', 'smartsupp-live-chat' ),
 		);
+	}
+
+	public function enqueueAssets() {
+		// phpcs:ignore WordPress.Security.NonceVerification.Recommended
+		if ( empty( $_GET['page'] ) || $_GET['page'] !== $this->plugin_slug ) {
+			return;
+		}
+		wp_enqueue_style( 'smartsupp-admin-fonts', 'https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap', array(), null );
+		wp_enqueue_style( 'smartsupp-admin', esc_url( plugins_url( 'assets/style.css', dirname( __FILE__ ) ) ), array(), null );
 	}
 }
